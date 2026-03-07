@@ -1,0 +1,5 @@
+jdk:
+  - openjdk17
+install:
+  # This tells JitPack to build the library and "install" it to its local cache
+  - ./gradlew :lib:publishToMavenLocal -x test

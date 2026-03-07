@@ -1,0 +1,5061 @@
+package com.scailo.sdk;
+
+import static io.grpc.MethodDescriptor.generateFullMethodName;
+
+/**
+ * <pre>
+ *Describes the common methods applicable on each outward job free issue material
+ * </pre>
+ */
+@javax.annotation.Generated(
+    value = "by gRPC proto compiler (version 1.58.0)",
+    comments = "Source: outward_jobs_free_issue_materials.scailo.proto")
+@io.grpc.stub.annotations.GrpcGenerated
+public final class OutwardJobsFreeIssueMaterialsServiceGrpc {
+
+  private OutwardJobsFreeIssueMaterialsServiceGrpc() {}
+
+  public static final java.lang.String SERVICE_NAME = "Scailo.OutwardJobsFreeIssueMaterialsService";
+
+  // Static method descriptors that strictly reflect the proto.
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest,
+      com.scailo.sdk.IdentifierResponse> getCreateMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Create",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest,
+      com.scailo.sdk.IdentifierResponse> getCreateMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest, com.scailo.sdk.IdentifierResponse> getCreateMethod;
+    if ((getCreateMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCreateMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getCreateMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCreateMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getCreateMethod = getCreateMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Create"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Create"))
+              .build();
+        }
+      }
+    }
+    return getCreateMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest,
+      com.scailo.sdk.IdentifierResponse> getDraftMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Draft",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest,
+      com.scailo.sdk.IdentifierResponse> getDraftMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest, com.scailo.sdk.IdentifierResponse> getDraftMethod;
+    if ((getDraftMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDraftMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDraftMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDraftMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDraftMethod = getDraftMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Draft"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Draft"))
+              .build();
+        }
+      }
+    }
+    return getDraftMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest,
+      com.scailo.sdk.IdentifierResponse> getDraftUpdateMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DraftUpdate",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest,
+      com.scailo.sdk.IdentifierResponse> getDraftUpdateMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest, com.scailo.sdk.IdentifierResponse> getDraftUpdateMethod;
+    if ((getDraftUpdateMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDraftUpdateMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDraftUpdateMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDraftUpdateMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDraftUpdateMethod = getDraftUpdateMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DraftUpdate"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DraftUpdate"))
+              .build();
+        }
+      }
+    }
+    return getDraftUpdateMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getSendForVerificationMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "SendForVerification",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getSendForVerificationMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getSendForVerificationMethod;
+    if ((getSendForVerificationMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSendForVerificationMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getSendForVerificationMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSendForVerificationMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getSendForVerificationMethod = getSendForVerificationMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SendForVerification"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("SendForVerification"))
+              .build();
+        }
+      }
+    }
+    return getSendForVerificationMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getVerifyMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Verify",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getVerifyMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getVerifyMethod;
+    if ((getVerifyMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getVerifyMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getVerifyMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getVerifyMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getVerifyMethod = getVerifyMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Verify"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Verify"))
+              .build();
+        }
+      }
+    }
+    return getVerifyMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getApproveMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Approve",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getApproveMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getApproveMethod;
+    if ((getApproveMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getApproveMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getApproveMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getApproveMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getApproveMethod = getApproveMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Approve"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Approve"))
+              .build();
+        }
+      }
+    }
+    return getApproveMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getSendForRevisionMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "SendForRevision",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getSendForRevisionMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getSendForRevisionMethod;
+    if ((getSendForRevisionMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSendForRevisionMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getSendForRevisionMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSendForRevisionMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getSendForRevisionMethod = getSendForRevisionMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SendForRevision"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("SendForRevision"))
+              .build();
+        }
+      }
+    }
+    return getSendForRevisionMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest,
+      com.scailo.sdk.IdentifierResponse> getRevisionUpdateMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "RevisionUpdate",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest,
+      com.scailo.sdk.IdentifierResponse> getRevisionUpdateMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest, com.scailo.sdk.IdentifierResponse> getRevisionUpdateMethod;
+    if ((getRevisionUpdateMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getRevisionUpdateMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getRevisionUpdateMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getRevisionUpdateMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getRevisionUpdateMethod = getRevisionUpdateMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RevisionUpdate"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("RevisionUpdate"))
+              .build();
+        }
+      }
+    }
+    return getRevisionUpdateMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getHaltMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Halt",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getHaltMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getHaltMethod;
+    if ((getHaltMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getHaltMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getHaltMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getHaltMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getHaltMethod = getHaltMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Halt"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Halt"))
+              .build();
+        }
+      }
+    }
+    return getHaltMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getDiscardMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Discard",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getDiscardMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getDiscardMethod;
+    if ((getDiscardMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDiscardMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDiscardMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDiscardMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDiscardMethod = getDiscardMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Discard"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Discard"))
+              .build();
+        }
+      }
+    }
+    return getDiscardMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getRestoreMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Restore",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getRestoreMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getRestoreMethod;
+    if ((getRestoreMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getRestoreMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getRestoreMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getRestoreMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getRestoreMethod = getRestoreMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Restore"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Restore"))
+              .build();
+        }
+      }
+    }
+    return getRestoreMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getCompleteMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Complete",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getCompleteMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getCompleteMethod;
+    if ((getCompleteMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCompleteMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getCompleteMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCompleteMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getCompleteMethod = getCompleteMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Complete"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Complete"))
+              .build();
+        }
+      }
+    }
+    return getCompleteMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getRepeatMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Repeat",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getRepeatMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getRepeatMethod;
+    if ((getRepeatMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getRepeatMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getRepeatMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getRepeatMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getRepeatMethod = getRepeatMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Repeat"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Repeat"))
+              .build();
+        }
+      }
+    }
+    return getRepeatMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getReopenMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Reopen",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getReopenMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getReopenMethod;
+    if ((getReopenMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getReopenMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getReopenMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getReopenMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getReopenMethod = getReopenMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Reopen"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Reopen"))
+              .build();
+        }
+      }
+    }
+    return getReopenMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getCommentAddMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "CommentAdd",
+      requestType = com.scailo.sdk.IdentifierUUIDWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getCommentAddMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse> getCommentAddMethod;
+    if ((getCommentAddMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCommentAddMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getCommentAddMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCommentAddMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getCommentAddMethod = getCommentAddMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUIDWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CommentAdd"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUIDWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("CommentAdd"))
+              .build();
+        }
+      }
+    }
+    return getCommentAddMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithEmailAttributes,
+      com.scailo.sdk.IdentifierResponse> getSendEmailMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "SendEmail",
+      requestType = com.scailo.sdk.IdentifierWithEmailAttributes.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithEmailAttributes,
+      com.scailo.sdk.IdentifierResponse> getSendEmailMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithEmailAttributes, com.scailo.sdk.IdentifierResponse> getSendEmailMethod;
+    if ((getSendEmailMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSendEmailMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getSendEmailMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSendEmailMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getSendEmailMethod = getSendEmailMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierWithEmailAttributes, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SendEmail"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierWithEmailAttributes.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("SendEmail"))
+              .build();
+        }
+      }
+    }
+    return getSendEmailMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource,
+      com.scailo.sdk.MagicLink> getCreateMagicLinkMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "CreateMagicLink",
+      requestType = com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource.class,
+      responseType = com.scailo.sdk.MagicLink.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource,
+      com.scailo.sdk.MagicLink> getCreateMagicLinkMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource, com.scailo.sdk.MagicLink> getCreateMagicLinkMethod;
+    if ((getCreateMagicLinkMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCreateMagicLinkMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getCreateMagicLinkMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCreateMagicLinkMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getCreateMagicLinkMethod = getCreateMagicLinkMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource, com.scailo.sdk.MagicLink>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateMagicLink"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.MagicLink.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("CreateMagicLink"))
+              .build();
+        }
+      }
+    }
+    return getCreateMagicLinkMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest,
+      com.scailo.sdk.IdentifierResponse> getAutofillMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Autofill",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest,
+      com.scailo.sdk.IdentifierResponse> getAutofillMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest, com.scailo.sdk.IdentifierResponse> getAutofillMethod;
+    if ((getAutofillMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getAutofillMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getAutofillMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getAutofillMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getAutofillMethod = getAutofillMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Autofill"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Autofill"))
+              .build();
+        }
+      }
+    }
+    return getAutofillMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.BooleanResponse> getIsCompletableMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "IsCompletable",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.BooleanResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.BooleanResponse> getIsCompletableMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.BooleanResponse> getIsCompletableMethod;
+    if ((getIsCompletableMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getIsCompletableMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getIsCompletableMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getIsCompletableMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getIsCompletableMethod = getIsCompletableMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.BooleanResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "IsCompletable"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.BooleanResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("IsCompletable"))
+              .build();
+        }
+      }
+    }
+    return getIsCompletableMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest,
+      com.scailo.sdk.IdentifierResponse> getAddOutwardJobFreeIssueMaterialItemMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "AddOutwardJobFreeIssueMaterialItem",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest,
+      com.scailo.sdk.IdentifierResponse> getAddOutwardJobFreeIssueMaterialItemMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest, com.scailo.sdk.IdentifierResponse> getAddOutwardJobFreeIssueMaterialItemMethod;
+    if ((getAddOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getAddOutwardJobFreeIssueMaterialItemMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getAddOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getAddOutwardJobFreeIssueMaterialItemMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getAddOutwardJobFreeIssueMaterialItemMethod = getAddOutwardJobFreeIssueMaterialItemMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AddOutwardJobFreeIssueMaterialItem"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("AddOutwardJobFreeIssueMaterialItem"))
+              .build();
+        }
+      }
+    }
+    return getAddOutwardJobFreeIssueMaterialItemMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest,
+      com.scailo.sdk.IdentifierResponse> getModifyOutwardJobFreeIssueMaterialItemMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ModifyOutwardJobFreeIssueMaterialItem",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest,
+      com.scailo.sdk.IdentifierResponse> getModifyOutwardJobFreeIssueMaterialItemMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest, com.scailo.sdk.IdentifierResponse> getModifyOutwardJobFreeIssueMaterialItemMethod;
+    if ((getModifyOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getModifyOutwardJobFreeIssueMaterialItemMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getModifyOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getModifyOutwardJobFreeIssueMaterialItemMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getModifyOutwardJobFreeIssueMaterialItemMethod = getModifyOutwardJobFreeIssueMaterialItemMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ModifyOutwardJobFreeIssueMaterialItem"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ModifyOutwardJobFreeIssueMaterialItem"))
+              .build();
+        }
+      }
+    }
+    return getModifyOutwardJobFreeIssueMaterialItemMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getApproveOutwardJobFreeIssueMaterialItemMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ApproveOutwardJobFreeIssueMaterialItem",
+      requestType = com.scailo.sdk.IdentifierWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getApproveOutwardJobFreeIssueMaterialItemMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithUserComment, com.scailo.sdk.IdentifierResponse> getApproveOutwardJobFreeIssueMaterialItemMethod;
+    if ((getApproveOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getApproveOutwardJobFreeIssueMaterialItemMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getApproveOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getApproveOutwardJobFreeIssueMaterialItemMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getApproveOutwardJobFreeIssueMaterialItemMethod = getApproveOutwardJobFreeIssueMaterialItemMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ApproveOutwardJobFreeIssueMaterialItem"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ApproveOutwardJobFreeIssueMaterialItem"))
+              .build();
+        }
+      }
+    }
+    return getApproveOutwardJobFreeIssueMaterialItemMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getDeleteOutwardJobFreeIssueMaterialItemMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DeleteOutwardJobFreeIssueMaterialItem",
+      requestType = com.scailo.sdk.IdentifierWithUserComment.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithUserComment,
+      com.scailo.sdk.IdentifierResponse> getDeleteOutwardJobFreeIssueMaterialItemMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithUserComment, com.scailo.sdk.IdentifierResponse> getDeleteOutwardJobFreeIssueMaterialItemMethod;
+    if ((getDeleteOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDeleteOutwardJobFreeIssueMaterialItemMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDeleteOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDeleteOutwardJobFreeIssueMaterialItemMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDeleteOutwardJobFreeIssueMaterialItemMethod = getDeleteOutwardJobFreeIssueMaterialItemMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierWithUserComment, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteOutwardJobFreeIssueMaterialItem"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierWithUserComment.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DeleteOutwardJobFreeIssueMaterialItem"))
+              .build();
+        }
+      }
+    }
+    return getDeleteOutwardJobFreeIssueMaterialItemMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.ReorderItemsRequest,
+      com.scailo.sdk.IdentifierResponse> getReorderOutwardJobFreeIssueMaterialItemsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ReorderOutwardJobFreeIssueMaterialItems",
+      requestType = com.scailo.sdk.ReorderItemsRequest.class,
+      responseType = com.scailo.sdk.IdentifierResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.ReorderItemsRequest,
+      com.scailo.sdk.IdentifierResponse> getReorderOutwardJobFreeIssueMaterialItemsMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.ReorderItemsRequest, com.scailo.sdk.IdentifierResponse> getReorderOutwardJobFreeIssueMaterialItemsMethod;
+    if ((getReorderOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getReorderOutwardJobFreeIssueMaterialItemsMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getReorderOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getReorderOutwardJobFreeIssueMaterialItemsMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getReorderOutwardJobFreeIssueMaterialItemsMethod = getReorderOutwardJobFreeIssueMaterialItemsMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.ReorderItemsRequest, com.scailo.sdk.IdentifierResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ReorderOutwardJobFreeIssueMaterialItems"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.ReorderItemsRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ReorderOutwardJobFreeIssueMaterialItems"))
+              .build();
+        }
+      }
+    }
+    return getReorderOutwardJobFreeIssueMaterialItemsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.Identifier,
+      com.scailo.sdk.OutwardJobFreeIssueMaterialItem> getViewOutwardJobFreeIssueMaterialItemByIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewOutwardJobFreeIssueMaterialItemByID",
+      requestType = com.scailo.sdk.Identifier.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterialItem.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.Identifier,
+      com.scailo.sdk.OutwardJobFreeIssueMaterialItem> getViewOutwardJobFreeIssueMaterialItemByIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.Identifier, com.scailo.sdk.OutwardJobFreeIssueMaterialItem> getViewOutwardJobFreeIssueMaterialItemByIDMethod;
+    if ((getViewOutwardJobFreeIssueMaterialItemByIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemByIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewOutwardJobFreeIssueMaterialItemByIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemByIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemByIDMethod = getViewOutwardJobFreeIssueMaterialItemByIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.Identifier, com.scailo.sdk.OutwardJobFreeIssueMaterialItem>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewOutwardJobFreeIssueMaterialItemByID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.Identifier.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItem.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewOutwardJobFreeIssueMaterialItemByID"))
+              .build();
+        }
+      }
+    }
+    return getViewOutwardJobFreeIssueMaterialItemByIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.SimpleSearchReq,
+      com.scailo.sdk.OutwardJobFreeIssueMaterialItem> getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewOutwardJobFreeIssueMaterialItemByInventoryHash",
+      requestType = com.scailo.sdk.SimpleSearchReq.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterialItem.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.SimpleSearchReq,
+      com.scailo.sdk.OutwardJobFreeIssueMaterialItem> getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.SimpleSearchReq, com.scailo.sdk.OutwardJobFreeIssueMaterialItem> getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod;
+    if ((getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod = getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.SimpleSearchReq, com.scailo.sdk.OutwardJobFreeIssueMaterialItem>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewOutwardJobFreeIssueMaterialItemByInventoryHash"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.SimpleSearchReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItem.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewOutwardJobFreeIssueMaterialItemByInventoryHash"))
+              .build();
+        }
+      }
+    }
+    return getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewApprovedOutwardJobFreeIssueMaterialItemsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewApprovedOutwardJobFreeIssueMaterialItems",
+      requestType = com.scailo.sdk.IdentifierWithSearchKey.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewApprovedOutwardJobFreeIssueMaterialItemsMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey, com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewApprovedOutwardJobFreeIssueMaterialItemsMethod;
+    if ((getViewApprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewApprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewApprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewApprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewApprovedOutwardJobFreeIssueMaterialItemsMethod = getViewApprovedOutwardJobFreeIssueMaterialItemsMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierWithSearchKey, com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewApprovedOutwardJobFreeIssueMaterialItems"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierWithSearchKey.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewApprovedOutwardJobFreeIssueMaterialItems"))
+              .build();
+        }
+      }
+    }
+    return getViewApprovedOutwardJobFreeIssueMaterialItemsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewUnapprovedOutwardJobFreeIssueMaterialItems",
+      requestType = com.scailo.sdk.IdentifierWithSearchKey.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey, com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod;
+    if ((getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod = getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierWithSearchKey, com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewUnapprovedOutwardJobFreeIssueMaterialItems"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierWithSearchKey.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewUnapprovedOutwardJobFreeIssueMaterialItems"))
+              .build();
+        }
+      }
+    }
+    return getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewOutwardJobFreeIssueMaterialItemHistoryMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewOutwardJobFreeIssueMaterialItemHistory",
+      requestType = com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewOutwardJobFreeIssueMaterialItemHistoryMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> getViewOutwardJobFreeIssueMaterialItemHistoryMethod;
+    if ((getViewOutwardJobFreeIssueMaterialItemHistoryMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemHistoryMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewOutwardJobFreeIssueMaterialItemHistoryMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemHistoryMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewOutwardJobFreeIssueMaterialItemHistoryMethod = getViewOutwardJobFreeIssueMaterialItemHistoryMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewOutwardJobFreeIssueMaterialItemHistory"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewOutwardJobFreeIssueMaterialItemHistory"))
+              .build();
+        }
+      }
+    }
+    return getViewOutwardJobFreeIssueMaterialItemHistoryMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewPaginatedApprovedOutwardJobFreeIssueMaterialItems",
+      requestType = com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod;
+    if ((getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod = getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewPaginatedApprovedOutwardJobFreeIssueMaterialItems"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewPaginatedApprovedOutwardJobFreeIssueMaterialItems"))
+              .build();
+        }
+      }
+    }
+    return getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems",
+      requestType = com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod;
+    if ((getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod = getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems"))
+              .build();
+        }
+      }
+    }
+    return getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getSearchItemsWithPaginationMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "SearchItemsWithPagination",
+      requestType = com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getSearchItemsWithPaginationMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> getSearchItemsWithPaginationMethod;
+    if ((getSearchItemsWithPaginationMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSearchItemsWithPaginationMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getSearchItemsWithPaginationMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSearchItemsWithPaginationMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getSearchItemsWithPaginationMethod = getSearchItemsWithPaginationMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SearchItemsWithPagination"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("SearchItemsWithPagination"))
+              .build();
+        }
+      }
+    }
+    return getSearchItemsWithPaginationMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.StandardFile> getDownloadItemsAsCSVMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DownloadItemsAsCSV",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.StandardFile.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.StandardFile> getDownloadItemsAsCSVMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.StandardFile> getDownloadItemsAsCSVMethod;
+    if ((getDownloadItemsAsCSVMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadItemsAsCSVMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDownloadItemsAsCSVMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadItemsAsCSVMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadItemsAsCSVMethod = getDownloadItemsAsCSVMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.StandardFile>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DownloadItemsAsCSV"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.StandardFile.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DownloadItemsAsCSV"))
+              .build();
+        }
+      }
+    }
+    return getDownloadItemsAsCSVMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.Empty,
+      com.scailo.sdk.StandardFile> getDownloadItemsTemplateAsCSVMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DownloadItemsTemplateAsCSV",
+      requestType = com.scailo.sdk.Empty.class,
+      responseType = com.scailo.sdk.StandardFile.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.Empty,
+      com.scailo.sdk.StandardFile> getDownloadItemsTemplateAsCSVMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.Empty, com.scailo.sdk.StandardFile> getDownloadItemsTemplateAsCSVMethod;
+    if ((getDownloadItemsTemplateAsCSVMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadItemsTemplateAsCSVMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDownloadItemsTemplateAsCSVMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadItemsTemplateAsCSVMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadItemsTemplateAsCSVMethod = getDownloadItemsTemplateAsCSVMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.Empty, com.scailo.sdk.StandardFile>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DownloadItemsTemplateAsCSV"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.Empty.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.StandardFile.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DownloadItemsTemplateAsCSV"))
+              .build();
+        }
+      }
+    }
+    return getDownloadItemsTemplateAsCSVMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.Identifier,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewByID",
+      requestType = com.scailo.sdk.Identifier.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterial.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.Identifier,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.Identifier, com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByIDMethod;
+    if ((getViewByIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewByIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByIDMethod = getViewByIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.Identifier, com.scailo.sdk.OutwardJobFreeIssueMaterial>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewByID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.Identifier.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterial.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewByID"))
+              .build();
+        }
+      }
+    }
+    return getViewByIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByUUIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewByUUID",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterial.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByUUIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByUUIDMethod;
+    if ((getViewByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByUUIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByUUIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByUUIDMethod = getViewByUUIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobFreeIssueMaterial>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewByUUID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterial.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewByUUID"))
+              .build();
+        }
+      }
+    }
+    return getViewByUUIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.SimpleSearchReq,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByReferenceIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewByReferenceID",
+      requestType = com.scailo.sdk.SimpleSearchReq.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterial.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.SimpleSearchReq,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByReferenceIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.SimpleSearchReq, com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewByReferenceIDMethod;
+    if ((getViewByReferenceIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByReferenceIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewByReferenceIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByReferenceIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewByReferenceIDMethod = getViewByReferenceIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.SimpleSearchReq, com.scailo.sdk.OutwardJobFreeIssueMaterial>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewByReferenceID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.SimpleSearchReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterial.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewByReferenceID"))
+              .build();
+        }
+      }
+    }
+    return getViewByReferenceIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.Identifier,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewEssentialByIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewEssentialByID",
+      requestType = com.scailo.sdk.Identifier.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterial.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.Identifier,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewEssentialByIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.Identifier, com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewEssentialByIDMethod;
+    if ((getViewEssentialByIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewEssentialByIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewEssentialByIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewEssentialByIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewEssentialByIDMethod = getViewEssentialByIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.Identifier, com.scailo.sdk.OutwardJobFreeIssueMaterial>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewEssentialByID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.Identifier.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterial.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewEssentialByID"))
+              .build();
+        }
+      }
+    }
+    return getViewEssentialByIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewEssentialByUUIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewEssentialByUUID",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterial.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewEssentialByUUIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobFreeIssueMaterial> getViewEssentialByUUIDMethod;
+    if ((getViewEssentialByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewEssentialByUUIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewEssentialByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewEssentialByUUIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewEssentialByUUIDMethod = getViewEssentialByUUIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobFreeIssueMaterial>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewEssentialByUUID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterial.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewEssentialByUUID"))
+              .build();
+        }
+      }
+    }
+    return getViewEssentialByUUIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifiersList,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewFromIDsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewFromIDs",
+      requestType = com.scailo.sdk.IdentifiersList.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifiersList,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewFromIDsMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifiersList, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewFromIDsMethod;
+    if ((getViewFromIDsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewFromIDsMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewFromIDsMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewFromIDsMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewFromIDsMethod = getViewFromIDsMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifiersList, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewFromIDs"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifiersList.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewFromIDs"))
+              .build();
+        }
+      }
+    }
+    return getViewFromIDsMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters> getViewAncillaryParametersByUUIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewAncillaryParametersByUUID",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters> getViewAncillaryParametersByUUIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters> getViewAncillaryParametersByUUIDMethod;
+    if ((getViewAncillaryParametersByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAncillaryParametersByUUIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewAncillaryParametersByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAncillaryParametersByUUIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAncillaryParametersByUUIDMethod = getViewAncillaryParametersByUUIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewAncillaryParametersByUUID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewAncillaryParametersByUUID"))
+              .build();
+        }
+      }
+    }
+    return getViewAncillaryParametersByUUIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.ActiveStatus,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewAllMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewAll",
+      requestType = com.scailo.sdk.ActiveStatus.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.ActiveStatus,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewAllMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.ActiveStatus, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewAllMethod;
+    if ((getViewAllMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAllMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewAllMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAllMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAllMethod = getViewAllMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.ActiveStatus, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewAll"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.ActiveStatus.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewAll"))
+              .build();
+        }
+      }
+    }
+    return getViewAllMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewAllForEntityUUIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewAllForEntityUUID",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewAllForEntityUUIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getViewAllForEntityUUIDMethod;
+    if ((getViewAllForEntityUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAllForEntityUUIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewAllForEntityUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAllForEntityUUIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAllForEntityUUIDMethod = getViewAllForEntityUUIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewAllForEntityUUID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewAllForEntityUUID"))
+              .build();
+        }
+      }
+    }
+    return getViewAllForEntityUUIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse> getViewWithPaginationMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewWithPagination",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse> getViewWithPaginationMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse> getViewWithPaginationMethod;
+    if ((getViewWithPaginationMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewWithPaginationMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewWithPaginationMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewWithPaginationMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewWithPaginationMethod = getViewWithPaginationMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewWithPagination"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewWithPagination"))
+              .build();
+        }
+      }
+    }
+    return getViewWithPaginationMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey,
+      com.scailo.sdk.FamiliesList> getViewProspectiveFamiliesMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewProspectiveFamilies",
+      requestType = com.scailo.sdk.IdentifierWithSearchKey.class,
+      responseType = com.scailo.sdk.FamiliesList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey,
+      com.scailo.sdk.FamiliesList> getViewProspectiveFamiliesMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierWithSearchKey, com.scailo.sdk.FamiliesList> getViewProspectiveFamiliesMethod;
+    if ((getViewProspectiveFamiliesMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewProspectiveFamiliesMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewProspectiveFamiliesMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewProspectiveFamiliesMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewProspectiveFamiliesMethod = getViewProspectiveFamiliesMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierWithSearchKey, com.scailo.sdk.FamiliesList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewProspectiveFamilies"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierWithSearchKey.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.FamiliesList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewProspectiveFamilies"))
+              .build();
+        }
+      }
+    }
+    return getViewProspectiveFamiliesMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.FilterFamiliesReqForIdentifier,
+      com.scailo.sdk.FamiliesList> getFilterProspectiveFamiliesMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "FilterProspectiveFamilies",
+      requestType = com.scailo.sdk.FilterFamiliesReqForIdentifier.class,
+      responseType = com.scailo.sdk.FamiliesList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.FilterFamiliesReqForIdentifier,
+      com.scailo.sdk.FamiliesList> getFilterProspectiveFamiliesMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.FilterFamiliesReqForIdentifier, com.scailo.sdk.FamiliesList> getFilterProspectiveFamiliesMethod;
+    if ((getFilterProspectiveFamiliesMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getFilterProspectiveFamiliesMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getFilterProspectiveFamiliesMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getFilterProspectiveFamiliesMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getFilterProspectiveFamiliesMethod = getFilterProspectiveFamiliesMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.FilterFamiliesReqForIdentifier, com.scailo.sdk.FamiliesList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "FilterProspectiveFamilies"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.FilterFamiliesReqForIdentifier.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.FamiliesList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("FilterProspectiveFamilies"))
+              .build();
+        }
+      }
+    }
+    return getFilterProspectiveFamiliesMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest> getViewProspectiveOutwardJobFreeIssueMaterialItemMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewProspectiveOutwardJobFreeIssueMaterialItem",
+      requestType = com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest> getViewProspectiveOutwardJobFreeIssueMaterialItemMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest> getViewProspectiveOutwardJobFreeIssueMaterialItemMethod;
+    if ((getViewProspectiveOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewProspectiveOutwardJobFreeIssueMaterialItemMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewProspectiveOutwardJobFreeIssueMaterialItemMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewProspectiveOutwardJobFreeIssueMaterialItemMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewProspectiveOutwardJobFreeIssueMaterialItemMethod = getViewProspectiveOutwardJobFreeIssueMaterialItemMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest, com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewProspectiveOutwardJobFreeIssueMaterialItem"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewProspectiveOutwardJobFreeIssueMaterialItem"))
+              .build();
+        }
+      }
+    }
+    return getViewProspectiveOutwardJobFreeIssueMaterialItemMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.BooleanResponse> getIsDownloadableMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "IsDownloadable",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.BooleanResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.BooleanResponse> getIsDownloadableMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.BooleanResponse> getIsDownloadableMethod;
+    if ((getIsDownloadableMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getIsDownloadableMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getIsDownloadableMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getIsDownloadableMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getIsDownloadableMethod = getIsDownloadableMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.BooleanResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "IsDownloadable"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.BooleanResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("IsDownloadable"))
+              .build();
+        }
+      }
+    }
+    return getIsDownloadableMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.StandardFile> getDownloadByUUIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DownloadByUUID",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.StandardFile.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.StandardFile> getDownloadByUUIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.StandardFile> getDownloadByUUIDMethod;
+    if ((getDownloadByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadByUUIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDownloadByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadByUUIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadByUUIDMethod = getDownloadByUUIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.StandardFile>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DownloadByUUID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.StandardFile.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DownloadByUUID"))
+              .build();
+        }
+      }
+    }
+    return getDownloadByUUIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.StandardFile> getDownloadLabelByUUIDMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DownloadLabelByUUID",
+      requestType = com.scailo.sdk.IdentifierUUID.class,
+      responseType = com.scailo.sdk.StandardFile.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID,
+      com.scailo.sdk.StandardFile> getDownloadLabelByUUIDMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.StandardFile> getDownloadLabelByUUIDMethod;
+    if ((getDownloadLabelByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadLabelByUUIDMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDownloadLabelByUUIDMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadLabelByUUIDMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadLabelByUUIDMethod = getDownloadLabelByUUIDMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.IdentifierUUID, com.scailo.sdk.StandardFile>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DownloadLabelByUUID"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.IdentifierUUID.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.StandardFile.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DownloadLabelByUUID"))
+              .build();
+        }
+      }
+    }
+    return getDownloadLabelByUUIDMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest,
+      com.scailo.sdk.DualQuantitiesResponse> getViewAddedFamilyQuantityForSourceMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ViewAddedFamilyQuantityForSource",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest.class,
+      responseType = com.scailo.sdk.DualQuantitiesResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest,
+      com.scailo.sdk.DualQuantitiesResponse> getViewAddedFamilyQuantityForSourceMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, com.scailo.sdk.DualQuantitiesResponse> getViewAddedFamilyQuantityForSourceMethod;
+    if ((getViewAddedFamilyQuantityForSourceMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAddedFamilyQuantityForSourceMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getViewAddedFamilyQuantityForSourceMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAddedFamilyQuantityForSourceMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getViewAddedFamilyQuantityForSourceMethod = getViewAddedFamilyQuantityForSourceMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest, com.scailo.sdk.DualQuantitiesResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ViewAddedFamilyQuantityForSource"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.DualQuantitiesResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("ViewAddedFamilyQuantityForSource"))
+              .build();
+        }
+      }
+    }
+    return getViewAddedFamilyQuantityForSourceMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getSearchAllMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "SearchAll",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getSearchAllMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getSearchAllMethod;
+    if ((getSearchAllMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSearchAllMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getSearchAllMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getSearchAllMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getSearchAllMethod = getSearchAllMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SearchAll"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("SearchAll"))
+              .build();
+        }
+      }
+    }
+    return getSearchAllMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getFilterMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Filter",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq.class,
+      responseType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq,
+      com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getFilterMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> getFilterMethod;
+    if ((getFilterMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getFilterMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getFilterMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getFilterMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getFilterMethod = getFilterMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq, com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Filter"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsList.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Filter"))
+              .build();
+        }
+      }
+    }
+    return getFilterMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.CountInSLCStatusRequest,
+      com.scailo.sdk.CountResponse> getCountInStatusMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "CountInStatus",
+      requestType = com.scailo.sdk.CountInSLCStatusRequest.class,
+      responseType = com.scailo.sdk.CountResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.CountInSLCStatusRequest,
+      com.scailo.sdk.CountResponse> getCountInStatusMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.CountInSLCStatusRequest, com.scailo.sdk.CountResponse> getCountInStatusMethod;
+    if ((getCountInStatusMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCountInStatusMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getCountInStatusMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCountInStatusMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getCountInStatusMethod = getCountInStatusMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.CountInSLCStatusRequest, com.scailo.sdk.CountResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CountInStatus"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.CountInSLCStatusRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.CountResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("CountInStatus"))
+              .build();
+        }
+      }
+    }
+    return getCountInStatusMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq,
+      com.scailo.sdk.CountResponse> getCountMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Count",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq.class,
+      responseType = com.scailo.sdk.CountResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq,
+      com.scailo.sdk.CountResponse> getCountMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq, com.scailo.sdk.CountResponse> getCountMethod;
+    if ((getCountMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCountMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getCountMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getCountMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getCountMethod = getCountMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq, com.scailo.sdk.CountResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Count"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.CountResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("Count"))
+              .build();
+        }
+      }
+    }
+    return getCountMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq,
+      com.scailo.sdk.StandardFile> getDownloadAsCSVMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "DownloadAsCSV",
+      requestType = com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq.class,
+      responseType = com.scailo.sdk.StandardFile.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq,
+      com.scailo.sdk.StandardFile> getDownloadAsCSVMethod() {
+    io.grpc.MethodDescriptor<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq, com.scailo.sdk.StandardFile> getDownloadAsCSVMethod;
+    if ((getDownloadAsCSVMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadAsCSVMethod) == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        if ((getDownloadAsCSVMethod = OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadAsCSVMethod) == null) {
+          OutwardJobsFreeIssueMaterialsServiceGrpc.getDownloadAsCSVMethod = getDownloadAsCSVMethod =
+              io.grpc.MethodDescriptor.<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq, com.scailo.sdk.StandardFile>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DownloadAsCSV"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.scailo.sdk.StandardFile.getDefaultInstance()))
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier("DownloadAsCSV"))
+              .build();
+        }
+      }
+    }
+    return getDownloadAsCSVMethod;
+  }
+
+  /**
+   * Creates a new async stub that supports all call types for the service
+   */
+  public static OutwardJobsFreeIssueMaterialsServiceStub newStub(io.grpc.Channel channel) {
+    io.grpc.stub.AbstractStub.StubFactory<OutwardJobsFreeIssueMaterialsServiceStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<OutwardJobsFreeIssueMaterialsServiceStub>() {
+        @java.lang.Override
+        public OutwardJobsFreeIssueMaterialsServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new OutwardJobsFreeIssueMaterialsServiceStub(channel, callOptions);
+        }
+      };
+    return OutwardJobsFreeIssueMaterialsServiceStub.newStub(factory, channel);
+  }
+
+  /**
+   * Creates a new blocking-style stub that supports unary and streaming output calls on the service
+   */
+  public static OutwardJobsFreeIssueMaterialsServiceBlockingStub newBlockingStub(
+      io.grpc.Channel channel) {
+    io.grpc.stub.AbstractStub.StubFactory<OutwardJobsFreeIssueMaterialsServiceBlockingStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<OutwardJobsFreeIssueMaterialsServiceBlockingStub>() {
+        @java.lang.Override
+        public OutwardJobsFreeIssueMaterialsServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new OutwardJobsFreeIssueMaterialsServiceBlockingStub(channel, callOptions);
+        }
+      };
+    return OutwardJobsFreeIssueMaterialsServiceBlockingStub.newStub(factory, channel);
+  }
+
+  /**
+   * Creates a new ListenableFuture-style stub that supports unary calls on the service
+   */
+  public static OutwardJobsFreeIssueMaterialsServiceFutureStub newFutureStub(
+      io.grpc.Channel channel) {
+    io.grpc.stub.AbstractStub.StubFactory<OutwardJobsFreeIssueMaterialsServiceFutureStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<OutwardJobsFreeIssueMaterialsServiceFutureStub>() {
+        @java.lang.Override
+        public OutwardJobsFreeIssueMaterialsServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new OutwardJobsFreeIssueMaterialsServiceFutureStub(channel, callOptions);
+        }
+      };
+    return OutwardJobsFreeIssueMaterialsServiceFutureStub.newStub(factory, channel);
+  }
+
+  /**
+   * <pre>
+   *Describes the common methods applicable on each outward job free issue material
+   * </pre>
+   */
+  public interface AsyncService {
+
+    /**
+     * <pre>
+     * Create and send for verification
+     * </pre>
+     */
+    default void create(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Create and save as draft
+     * </pre>
+     */
+    default void draft(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDraftMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Update draft
+     * </pre>
+     */
+    default void draftUpdate(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDraftUpdateMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Send for verification
+     * </pre>
+     */
+    default void sendForVerification(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSendForVerificationMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Verify
+     * </pre>
+     */
+    default void verify(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getVerifyMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Approve
+     * </pre>
+     */
+    default void approve(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getApproveMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Send For Revision
+     * </pre>
+     */
+    default void sendForRevision(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSendForRevisionMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Update revision
+     * </pre>
+     */
+    default void revisionUpdate(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRevisionUpdateMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Halt
+     * </pre>
+     */
+    default void halt(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getHaltMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Discard
+     * </pre>
+     */
+    default void discard(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDiscardMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Restore
+     * </pre>
+     */
+    default void restore(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRestoreMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Complete
+     * </pre>
+     */
+    default void complete(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCompleteMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Repeat
+     * </pre>
+     */
+    default void repeat(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRepeatMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Reopen
+     * </pre>
+     */
+    default void reopen(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getReopenMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Add comment
+     * </pre>
+     */
+    default void commentAdd(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCommentAddMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Send Email
+     * </pre>
+     */
+    default void sendEmail(com.scailo.sdk.IdentifierWithEmailAttributes request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSendEmailMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Create a magic link
+     * </pre>
+     */
+    default void createMagicLink(com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.MagicLink> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateMagicLinkMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Autofill the outward job free issue material
+     * </pre>
+     */
+    default void autofill(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAutofillMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Checks if the Outward Job Free Issue Material can be marked as completed
+     * </pre>
+     */
+    default void isCompletable(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.BooleanResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getIsCompletableMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Add an item to a outward job free issue material
+     * </pre>
+     */
+    default void addOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAddOutwardJobFreeIssueMaterialItemMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Modify an item in a outward job free issue material
+     * </pre>
+     */
+    default void modifyOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getModifyOutwardJobFreeIssueMaterialItemMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Approve an item in a outward job free issue material
+     * </pre>
+     */
+    default void approveOutwardJobFreeIssueMaterialItem(com.scailo.sdk.IdentifierWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getApproveOutwardJobFreeIssueMaterialItemMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Delete an item in a outward job free issue material
+     * </pre>
+     */
+    default void deleteOutwardJobFreeIssueMaterialItem(com.scailo.sdk.IdentifierWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteOutwardJobFreeIssueMaterialItemMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Reorder items in a outward job free issue material
+     * </pre>
+     */
+    default void reorderOutwardJobFreeIssueMaterialItems(com.scailo.sdk.ReorderItemsRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getReorderOutwardJobFreeIssueMaterialItemsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by ID
+     * </pre>
+     */
+    default void viewOutwardJobFreeIssueMaterialItemByID(com.scailo.sdk.Identifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialItem> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewOutwardJobFreeIssueMaterialItemByIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by Inventory Hash
+     * </pre>
+     */
+    default void viewOutwardJobFreeIssueMaterialItemByInventoryHash(com.scailo.sdk.SimpleSearchReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialItem> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    default void viewApprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.IdentifierWithSearchKey request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewApprovedOutwardJobFreeIssueMaterialItemsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    default void viewUnapprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.IdentifierWithSearchKey request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View the history of the outward job free issue material item
+     * </pre>
+     */
+    default void viewOutwardJobFreeIssueMaterialItemHistory(com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewOutwardJobFreeIssueMaterialItemHistoryMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    default void viewPaginatedApprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    default void viewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Search through outward job free issue material items with pagination
+     * </pre>
+     */
+    default void searchItemsWithPagination(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSearchItemsWithPaginationMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+     * </pre>
+     */
+    default void downloadItemsAsCSV(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDownloadItemsAsCSVMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Download the CSV template that could be used to upload items
+     * </pre>
+     */
+    default void downloadItemsTemplateAsCSV(com.scailo.sdk.Empty request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDownloadItemsTemplateAsCSVMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View by ID
+     * </pre>
+     */
+    default void viewByID(com.scailo.sdk.Identifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewByIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View by UUID
+     * </pre>
+     */
+    default void viewByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewByUUIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View by Reference ID (returns the latest record in case of duplicates)
+     * </pre>
+     */
+    default void viewByReferenceID(com.scailo.sdk.SimpleSearchReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewByReferenceIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View only essential components by ID (without logs)
+     * </pre>
+     */
+    default void viewEssentialByID(com.scailo.sdk.Identifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewEssentialByIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View only essential components (without logs) that matches the given UUID
+     * </pre>
+     */
+    default void viewEssentialByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewEssentialByUUIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all records with the given IDs
+     * </pre>
+     */
+    default void viewFromIDs(com.scailo.sdk.IdentifiersList request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewFromIDsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     * </pre>
+     */
+    default void viewAncillaryParametersByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewAncillaryParametersByUUIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all
+     * </pre>
+     */
+    default void viewAll(com.scailo.sdk.ActiveStatus request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewAllMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all with the given entity UUID
+     * </pre>
+     */
+    default void viewAllForEntityUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewAllForEntityUUIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View with pagination
+     * </pre>
+     */
+    default void viewWithPagination(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewWithPaginationMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View prospective families for the given outward job free issue material
+     * </pre>
+     */
+    default void viewProspectiveFamilies(com.scailo.sdk.IdentifierWithSearchKey request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.FamiliesList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewProspectiveFamiliesMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Filter prospective families for the record represented by the given UUID identifier
+     * </pre>
+     */
+    default void filterProspectiveFamilies(com.scailo.sdk.FilterFamiliesReqForIdentifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.FamiliesList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFilterProspectiveFamiliesMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View prospective outward job free issue material item info for the given family ID and outward job free issue material ID
+     * </pre>
+     */
+    default void viewProspectiveOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewProspectiveOutwardJobFreeIssueMaterialItemMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * </pre>
+     */
+    default void isDownloadable(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.BooleanResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getIsDownloadableMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Download outward job free issue material with the given IdentifierUUID (can be used to allow public downloads)
+     * </pre>
+     */
+    default void downloadByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDownloadByUUIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Download the label for the outward job free issue material with the given IdentifierUUID
+     * </pre>
+     */
+    default void downloadLabelByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDownloadLabelByUUIDMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View already added quantities
+     * </pre>
+     */
+    default void viewAddedFamilyQuantityForSource(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.DualQuantitiesResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getViewAddedFamilyQuantityForSourceMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given search key
+     * </pre>
+     */
+    default void searchAll(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSearchAllMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given filter criteria
+     * </pre>
+     */
+    default void filter(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFilterMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Count in status
+     * </pre>
+     */
+    default void countInStatus(com.scailo.sdk.CountInSLCStatusRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.CountResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCountInStatusMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Count all that match the given criteria
+     * </pre>
+     */
+    default void count(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.CountResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCountMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     * </pre>
+     */
+    default void downloadAsCSV(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDownloadAsCSVMethod(), responseObserver);
+    }
+  }
+
+  /**
+   * Base class for the server implementation of the service OutwardJobsFreeIssueMaterialsService.
+   * <pre>
+   *Describes the common methods applicable on each outward job free issue material
+   * </pre>
+   */
+  public static abstract class OutwardJobsFreeIssueMaterialsServiceImplBase
+      implements io.grpc.BindableService, AsyncService {
+
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+      return OutwardJobsFreeIssueMaterialsServiceGrpc.bindService(this);
+    }
+  }
+
+  /**
+   * A stub to allow clients to do asynchronous rpc calls to service OutwardJobsFreeIssueMaterialsService.
+   * <pre>
+   *Describes the common methods applicable on each outward job free issue material
+   * </pre>
+   */
+  public static final class OutwardJobsFreeIssueMaterialsServiceStub
+      extends io.grpc.stub.AbstractAsyncStub<OutwardJobsFreeIssueMaterialsServiceStub> {
+    private OutwardJobsFreeIssueMaterialsServiceStub(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+      super(channel, callOptions);
+    }
+
+    @java.lang.Override
+    protected OutwardJobsFreeIssueMaterialsServiceStub build(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+      return new OutwardJobsFreeIssueMaterialsServiceStub(channel, callOptions);
+    }
+
+    /**
+     * <pre>
+     * Create and send for verification
+     * </pre>
+     */
+    public void create(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCreateMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Create and save as draft
+     * </pre>
+     */
+    public void draft(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDraftMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Update draft
+     * </pre>
+     */
+    public void draftUpdate(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDraftUpdateMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Send for verification
+     * </pre>
+     */
+    public void sendForVerification(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getSendForVerificationMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Verify
+     * </pre>
+     */
+    public void verify(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getVerifyMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Approve
+     * </pre>
+     */
+    public void approve(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getApproveMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Send For Revision
+     * </pre>
+     */
+    public void sendForRevision(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getSendForRevisionMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Update revision
+     * </pre>
+     */
+    public void revisionUpdate(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getRevisionUpdateMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Halt
+     * </pre>
+     */
+    public void halt(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getHaltMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Discard
+     * </pre>
+     */
+    public void discard(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDiscardMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Restore
+     * </pre>
+     */
+    public void restore(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getRestoreMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Complete
+     * </pre>
+     */
+    public void complete(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCompleteMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Repeat
+     * </pre>
+     */
+    public void repeat(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getRepeatMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Reopen
+     * </pre>
+     */
+    public void reopen(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getReopenMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Add comment
+     * </pre>
+     */
+    public void commentAdd(com.scailo.sdk.IdentifierUUIDWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCommentAddMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Send Email
+     * </pre>
+     */
+    public void sendEmail(com.scailo.sdk.IdentifierWithEmailAttributes request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getSendEmailMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Create a magic link
+     * </pre>
+     */
+    public void createMagicLink(com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.MagicLink> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCreateMagicLinkMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Autofill the outward job free issue material
+     * </pre>
+     */
+    public void autofill(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getAutofillMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Checks if the Outward Job Free Issue Material can be marked as completed
+     * </pre>
+     */
+    public void isCompletable(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.BooleanResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getIsCompletableMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Add an item to a outward job free issue material
+     * </pre>
+     */
+    public void addOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getAddOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Modify an item in a outward job free issue material
+     * </pre>
+     */
+    public void modifyOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getModifyOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Approve an item in a outward job free issue material
+     * </pre>
+     */
+    public void approveOutwardJobFreeIssueMaterialItem(com.scailo.sdk.IdentifierWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getApproveOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Delete an item in a outward job free issue material
+     * </pre>
+     */
+    public void deleteOutwardJobFreeIssueMaterialItem(com.scailo.sdk.IdentifierWithUserComment request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDeleteOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Reorder items in a outward job free issue material
+     * </pre>
+     */
+    public void reorderOutwardJobFreeIssueMaterialItems(com.scailo.sdk.ReorderItemsRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getReorderOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by ID
+     * </pre>
+     */
+    public void viewOutwardJobFreeIssueMaterialItemByID(com.scailo.sdk.Identifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialItem> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewOutwardJobFreeIssueMaterialItemByIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by Inventory Hash
+     * </pre>
+     */
+    public void viewOutwardJobFreeIssueMaterialItemByInventoryHash(com.scailo.sdk.SimpleSearchReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialItem> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    public void viewApprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.IdentifierWithSearchKey request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewApprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    public void viewUnapprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.IdentifierWithSearchKey request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View the history of the outward job free issue material item
+     * </pre>
+     */
+    public void viewOutwardJobFreeIssueMaterialItemHistory(com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewOutwardJobFreeIssueMaterialItemHistoryMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    public void viewPaginatedApprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    public void viewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Search through outward job free issue material items with pagination
+     * </pre>
+     */
+    public void searchItemsWithPagination(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getSearchItemsWithPaginationMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+     * </pre>
+     */
+    public void downloadItemsAsCSV(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDownloadItemsAsCSVMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Download the CSV template that could be used to upload items
+     * </pre>
+     */
+    public void downloadItemsTemplateAsCSV(com.scailo.sdk.Empty request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDownloadItemsTemplateAsCSVMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View by ID
+     * </pre>
+     */
+    public void viewByID(com.scailo.sdk.Identifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewByIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View by UUID
+     * </pre>
+     */
+    public void viewByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewByUUIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View by Reference ID (returns the latest record in case of duplicates)
+     * </pre>
+     */
+    public void viewByReferenceID(com.scailo.sdk.SimpleSearchReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewByReferenceIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View only essential components by ID (without logs)
+     * </pre>
+     */
+    public void viewEssentialByID(com.scailo.sdk.Identifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewEssentialByIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View only essential components (without logs) that matches the given UUID
+     * </pre>
+     */
+    public void viewEssentialByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewEssentialByUUIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all records with the given IDs
+     * </pre>
+     */
+    public void viewFromIDs(com.scailo.sdk.IdentifiersList request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewFromIDsMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     * </pre>
+     */
+    public void viewAncillaryParametersByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewAncillaryParametersByUUIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all
+     * </pre>
+     */
+    public void viewAll(com.scailo.sdk.ActiveStatus request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewAllMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all with the given entity UUID
+     * </pre>
+     */
+    public void viewAllForEntityUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewAllForEntityUUIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View with pagination
+     * </pre>
+     */
+    public void viewWithPagination(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewWithPaginationMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View prospective families for the given outward job free issue material
+     * </pre>
+     */
+    public void viewProspectiveFamilies(com.scailo.sdk.IdentifierWithSearchKey request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.FamiliesList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewProspectiveFamiliesMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Filter prospective families for the record represented by the given UUID identifier
+     * </pre>
+     */
+    public void filterProspectiveFamilies(com.scailo.sdk.FilterFamiliesReqForIdentifier request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.FamiliesList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getFilterProspectiveFamiliesMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View prospective outward job free issue material item info for the given family ID and outward job free issue material ID
+     * </pre>
+     */
+    public void viewProspectiveOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewProspectiveOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * </pre>
+     */
+    public void isDownloadable(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.BooleanResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getIsDownloadableMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Download outward job free issue material with the given IdentifierUUID (can be used to allow public downloads)
+     * </pre>
+     */
+    public void downloadByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDownloadByUUIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Download the label for the outward job free issue material with the given IdentifierUUID
+     * </pre>
+     */
+    public void downloadLabelByUUID(com.scailo.sdk.IdentifierUUID request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDownloadLabelByUUIDMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View already added quantities
+     * </pre>
+     */
+    public void viewAddedFamilyQuantityForSource(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.DualQuantitiesResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getViewAddedFamilyQuantityForSourceMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given search key
+     * </pre>
+     */
+    public void searchAll(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getSearchAllMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given filter criteria
+     * </pre>
+     */
+    public void filter(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getFilterMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Count in status
+     * </pre>
+     */
+    public void countInStatus(com.scailo.sdk.CountInSLCStatusRequest request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.CountResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCountInStatusMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * Count all that match the given criteria
+     * </pre>
+     */
+    public void count(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.CountResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getCountMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     * </pre>
+     */
+    public void downloadAsCSV(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request,
+        io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getDownloadAsCSVMethod(), getCallOptions()), request, responseObserver);
+    }
+  }
+
+  /**
+   * A stub to allow clients to do synchronous rpc calls to service OutwardJobsFreeIssueMaterialsService.
+   * <pre>
+   *Describes the common methods applicable on each outward job free issue material
+   * </pre>
+   */
+  public static final class OutwardJobsFreeIssueMaterialsServiceBlockingStub
+      extends io.grpc.stub.AbstractBlockingStub<OutwardJobsFreeIssueMaterialsServiceBlockingStub> {
+    private OutwardJobsFreeIssueMaterialsServiceBlockingStub(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+      super(channel, callOptions);
+    }
+
+    @java.lang.Override
+    protected OutwardJobsFreeIssueMaterialsServiceBlockingStub build(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+      return new OutwardJobsFreeIssueMaterialsServiceBlockingStub(channel, callOptions);
+    }
+
+    /**
+     * <pre>
+     * Create and send for verification
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse create(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCreateMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Create and save as draft
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse draft(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDraftMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Update draft
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse draftUpdate(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDraftUpdateMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Send for verification
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse sendForVerification(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSendForVerificationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Verify
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse verify(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getVerifyMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Approve
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse approve(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getApproveMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Send For Revision
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse sendForRevision(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSendForRevisionMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Update revision
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse revisionUpdate(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getRevisionUpdateMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Halt
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse halt(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getHaltMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Discard
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse discard(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDiscardMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Restore
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse restore(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getRestoreMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Complete
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse complete(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCompleteMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Repeat
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse repeat(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getRepeatMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Reopen
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse reopen(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getReopenMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Add comment
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse commentAdd(com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCommentAddMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Send Email
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse sendEmail(com.scailo.sdk.IdentifierWithEmailAttributes request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSendEmailMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Create a magic link
+     * </pre>
+     */
+    public com.scailo.sdk.MagicLink createMagicLink(com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCreateMagicLinkMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Autofill the outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse autofill(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getAutofillMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Checks if the Outward Job Free Issue Material can be marked as completed
+     * </pre>
+     */
+    public com.scailo.sdk.BooleanResponse isCompletable(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getIsCompletableMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Add an item to a outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse addOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getAddOutwardJobFreeIssueMaterialItemMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Modify an item in a outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse modifyOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getModifyOutwardJobFreeIssueMaterialItemMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Approve an item in a outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse approveOutwardJobFreeIssueMaterialItem(com.scailo.sdk.IdentifierWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getApproveOutwardJobFreeIssueMaterialItemMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Delete an item in a outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse deleteOutwardJobFreeIssueMaterialItem(com.scailo.sdk.IdentifierWithUserComment request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDeleteOutwardJobFreeIssueMaterialItemMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Reorder items in a outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.IdentifierResponse reorderOutwardJobFreeIssueMaterialItems(com.scailo.sdk.ReorderItemsRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getReorderOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by ID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterialItem viewOutwardJobFreeIssueMaterialItemByID(com.scailo.sdk.Identifier request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewOutwardJobFreeIssueMaterialItemByIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by Inventory Hash
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterialItem viewOutwardJobFreeIssueMaterialItemByInventoryHash(com.scailo.sdk.SimpleSearchReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList viewApprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.IdentifierWithSearchKey request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewApprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList viewUnapprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.IdentifierWithSearchKey request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View the history of the outward job free issue material item
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList viewOutwardJobFreeIssueMaterialItemHistory(com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewOutwardJobFreeIssueMaterialItemHistoryMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse viewPaginatedApprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse viewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Search through outward job free issue material items with pagination
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse searchItemsWithPagination(com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSearchItemsWithPaginationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+     * </pre>
+     */
+    public com.scailo.sdk.StandardFile downloadItemsAsCSV(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDownloadItemsAsCSVMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Download the CSV template that could be used to upload items
+     * </pre>
+     */
+    public com.scailo.sdk.StandardFile downloadItemsTemplateAsCSV(com.scailo.sdk.Empty request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDownloadItemsTemplateAsCSVMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View by ID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterial viewByID(com.scailo.sdk.Identifier request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewByIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View by UUID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterial viewByUUID(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewByUUIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View by Reference ID (returns the latest record in case of duplicates)
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterial viewByReferenceID(com.scailo.sdk.SimpleSearchReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewByReferenceIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View only essential components by ID (without logs)
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterial viewEssentialByID(com.scailo.sdk.Identifier request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewEssentialByIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View only essential components (without logs) that matches the given UUID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterial viewEssentialByUUID(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewEssentialByUUIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View all records with the given IDs
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsList viewFromIDs(com.scailo.sdk.IdentifiersList request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewFromIDsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters viewAncillaryParametersByUUID(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewAncillaryParametersByUUIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View all
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsList viewAll(com.scailo.sdk.ActiveStatus request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewAllMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View all with the given entity UUID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsList viewAllForEntityUUID(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewAllForEntityUUIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View with pagination
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse viewWithPagination(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewWithPaginationMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View prospective families for the given outward job free issue material
+     * </pre>
+     */
+    public com.scailo.sdk.FamiliesList viewProspectiveFamilies(com.scailo.sdk.IdentifierWithSearchKey request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewProspectiveFamiliesMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Filter prospective families for the record represented by the given UUID identifier
+     * </pre>
+     */
+    public com.scailo.sdk.FamiliesList filterProspectiveFamilies(com.scailo.sdk.FilterFamiliesReqForIdentifier request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getFilterProspectiveFamiliesMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View prospective outward job free issue material item info for the given family ID and outward job free issue material ID
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest viewProspectiveOutwardJobFreeIssueMaterialItem(com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewProspectiveOutwardJobFreeIssueMaterialItemMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * </pre>
+     */
+    public com.scailo.sdk.BooleanResponse isDownloadable(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getIsDownloadableMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Download outward job free issue material with the given IdentifierUUID (can be used to allow public downloads)
+     * </pre>
+     */
+    public com.scailo.sdk.StandardFile downloadByUUID(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDownloadByUUIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Download the label for the outward job free issue material with the given IdentifierUUID
+     * </pre>
+     */
+    public com.scailo.sdk.StandardFile downloadLabelByUUID(com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDownloadLabelByUUIDMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View already added quantities
+     * </pre>
+     */
+    public com.scailo.sdk.DualQuantitiesResponse viewAddedFamilyQuantityForSource(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getViewAddedFamilyQuantityForSourceMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given search key
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsList searchAll(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getSearchAllMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given filter criteria
+     * </pre>
+     */
+    public com.scailo.sdk.OutwardJobsFreeIssueMaterialsList filter(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getFilterMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Count in status
+     * </pre>
+     */
+    public com.scailo.sdk.CountResponse countInStatus(com.scailo.sdk.CountInSLCStatusRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCountInStatusMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * Count all that match the given criteria
+     * </pre>
+     */
+    public com.scailo.sdk.CountResponse count(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getCountMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     * </pre>
+     */
+    public com.scailo.sdk.StandardFile downloadAsCSV(com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getDownloadAsCSVMethod(), getCallOptions(), request);
+    }
+  }
+
+  /**
+   * A stub to allow clients to do ListenableFuture-style rpc calls to service OutwardJobsFreeIssueMaterialsService.
+   * <pre>
+   *Describes the common methods applicable on each outward job free issue material
+   * </pre>
+   */
+  public static final class OutwardJobsFreeIssueMaterialsServiceFutureStub
+      extends io.grpc.stub.AbstractFutureStub<OutwardJobsFreeIssueMaterialsServiceFutureStub> {
+    private OutwardJobsFreeIssueMaterialsServiceFutureStub(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+      super(channel, callOptions);
+    }
+
+    @java.lang.Override
+    protected OutwardJobsFreeIssueMaterialsServiceFutureStub build(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+      return new OutwardJobsFreeIssueMaterialsServiceFutureStub(channel, callOptions);
+    }
+
+    /**
+     * <pre>
+     * Create and send for verification
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> create(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCreateMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Create and save as draft
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> draft(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDraftMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Update draft
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> draftUpdate(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDraftUpdateMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Send for verification
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> sendForVerification(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getSendForVerificationMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Verify
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> verify(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getVerifyMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Approve
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> approve(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getApproveMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Send For Revision
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> sendForRevision(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getSendForRevisionMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Update revision
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> revisionUpdate(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getRevisionUpdateMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Halt
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> halt(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getHaltMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Discard
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> discard(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDiscardMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Restore
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> restore(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getRestoreMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Complete
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> complete(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCompleteMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Repeat
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> repeat(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getRepeatMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Reopen
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> reopen(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getReopenMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Add comment
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> commentAdd(
+        com.scailo.sdk.IdentifierUUIDWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCommentAddMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Send Email
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> sendEmail(
+        com.scailo.sdk.IdentifierWithEmailAttributes request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getSendEmailMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Create a magic link
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.MagicLink> createMagicLink(
+        com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCreateMagicLinkMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Autofill the outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> autofill(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getAutofillMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Checks if the Outward Job Free Issue Material can be marked as completed
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.BooleanResponse> isCompletable(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getIsCompletableMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Add an item to a outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> addOutwardJobFreeIssueMaterialItem(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getAddOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Modify an item in a outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> modifyOutwardJobFreeIssueMaterialItem(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getModifyOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Approve an item in a outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> approveOutwardJobFreeIssueMaterialItem(
+        com.scailo.sdk.IdentifierWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getApproveOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Delete an item in a outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> deleteOutwardJobFreeIssueMaterialItem(
+        com.scailo.sdk.IdentifierWithUserComment request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDeleteOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Reorder items in a outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.IdentifierResponse> reorderOutwardJobFreeIssueMaterialItems(
+        com.scailo.sdk.ReorderItemsRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getReorderOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by ID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterialItem> viewOutwardJobFreeIssueMaterialItemByID(
+        com.scailo.sdk.Identifier request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewOutwardJobFreeIssueMaterialItemByIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View Outward Job Free Issue Material Item by Inventory Hash
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterialItem> viewOutwardJobFreeIssueMaterialItemByInventoryHash(
+        com.scailo.sdk.SimpleSearchReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> viewApprovedOutwardJobFreeIssueMaterialItems(
+        com.scailo.sdk.IdentifierWithSearchKey request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewApprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> viewUnapprovedOutwardJobFreeIssueMaterialItems(
+        com.scailo.sdk.IdentifierWithSearchKey request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View the history of the outward job free issue material item
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList> viewOutwardJobFreeIssueMaterialItemHistory(
+        com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewOutwardJobFreeIssueMaterialItemHistoryMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View approved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> viewPaginatedApprovedOutwardJobFreeIssueMaterialItems(
+        com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View unapproved outward job free issue material items for given outward job free issue material ID with pagination
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> viewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems(
+        com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Search through outward job free issue material items with pagination
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse> searchItemsWithPagination(
+        com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getSearchItemsWithPaginationMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.StandardFile> downloadItemsAsCSV(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDownloadItemsAsCSVMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Download the CSV template that could be used to upload items
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.StandardFile> downloadItemsTemplateAsCSV(
+        com.scailo.sdk.Empty request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDownloadItemsTemplateAsCSVMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View by ID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterial> viewByID(
+        com.scailo.sdk.Identifier request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewByIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View by UUID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterial> viewByUUID(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewByUUIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View by Reference ID (returns the latest record in case of duplicates)
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterial> viewByReferenceID(
+        com.scailo.sdk.SimpleSearchReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewByReferenceIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View only essential components by ID (without logs)
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterial> viewEssentialByID(
+        com.scailo.sdk.Identifier request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewEssentialByIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View only essential components (without logs) that matches the given UUID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterial> viewEssentialByUUID(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewEssentialByUUIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View all records with the given IDs
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> viewFromIDs(
+        com.scailo.sdk.IdentifiersList request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewFromIDsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View the ancillary parameters (UUIDs of the internal references) by UUID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters> viewAncillaryParametersByUUID(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewAncillaryParametersByUUIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View all
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> viewAll(
+        com.scailo.sdk.ActiveStatus request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewAllMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View all with the given entity UUID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> viewAllForEntityUUID(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewAllForEntityUUIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View with pagination
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse> viewWithPagination(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewWithPaginationMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View prospective families for the given outward job free issue material
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.FamiliesList> viewProspectiveFamilies(
+        com.scailo.sdk.IdentifierWithSearchKey request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewProspectiveFamiliesMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Filter prospective families for the record represented by the given UUID identifier
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.FamiliesList> filterProspectiveFamilies(
+        com.scailo.sdk.FilterFamiliesReqForIdentifier request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getFilterProspectiveFamiliesMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View prospective outward job free issue material item info for the given family ID and outward job free issue material ID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest> viewProspectiveOutwardJobFreeIssueMaterialItem(
+        com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewProspectiveOutwardJobFreeIssueMaterialItemMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.BooleanResponse> isDownloadable(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getIsDownloadableMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Download outward job free issue material with the given IdentifierUUID (can be used to allow public downloads)
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.StandardFile> downloadByUUID(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDownloadByUUIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Download the label for the outward job free issue material with the given IdentifierUUID
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.StandardFile> downloadLabelByUUID(
+        com.scailo.sdk.IdentifierUUID request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDownloadLabelByUUIDMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View already added quantities
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.DualQuantitiesResponse> viewAddedFamilyQuantityForSource(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getViewAddedFamilyQuantityForSourceMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given search key
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> searchAll(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getSearchAllMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * View all that match the given filter criteria
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList> filter(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getFilterMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Count in status
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.CountResponse> countInStatus(
+        com.scailo.sdk.CountInSLCStatusRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCountInStatusMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * Count all that match the given criteria
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.CountResponse> count(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getCountMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.scailo.sdk.StandardFile> downloadAsCSV(
+        com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getDownloadAsCSVMethod(), getCallOptions()), request);
+    }
+  }
+
+  private static final int METHODID_CREATE = 0;
+  private static final int METHODID_DRAFT = 1;
+  private static final int METHODID_DRAFT_UPDATE = 2;
+  private static final int METHODID_SEND_FOR_VERIFICATION = 3;
+  private static final int METHODID_VERIFY = 4;
+  private static final int METHODID_APPROVE = 5;
+  private static final int METHODID_SEND_FOR_REVISION = 6;
+  private static final int METHODID_REVISION_UPDATE = 7;
+  private static final int METHODID_HALT = 8;
+  private static final int METHODID_DISCARD = 9;
+  private static final int METHODID_RESTORE = 10;
+  private static final int METHODID_COMPLETE = 11;
+  private static final int METHODID_REPEAT = 12;
+  private static final int METHODID_REOPEN = 13;
+  private static final int METHODID_COMMENT_ADD = 14;
+  private static final int METHODID_SEND_EMAIL = 15;
+  private static final int METHODID_CREATE_MAGIC_LINK = 16;
+  private static final int METHODID_AUTOFILL = 17;
+  private static final int METHODID_IS_COMPLETABLE = 18;
+  private static final int METHODID_ADD_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM = 19;
+  private static final int METHODID_MODIFY_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM = 20;
+  private static final int METHODID_APPROVE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM = 21;
+  private static final int METHODID_DELETE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM = 22;
+  private static final int METHODID_REORDER_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS = 23;
+  private static final int METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_BY_ID = 24;
+  private static final int METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_BY_INVENTORY_HASH = 25;
+  private static final int METHODID_VIEW_APPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS = 26;
+  private static final int METHODID_VIEW_UNAPPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS = 27;
+  private static final int METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_HISTORY = 28;
+  private static final int METHODID_VIEW_PAGINATED_APPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS = 29;
+  private static final int METHODID_VIEW_PAGINATED_UNAPPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS = 30;
+  private static final int METHODID_SEARCH_ITEMS_WITH_PAGINATION = 31;
+  private static final int METHODID_DOWNLOAD_ITEMS_AS_CSV = 32;
+  private static final int METHODID_DOWNLOAD_ITEMS_TEMPLATE_AS_CSV = 33;
+  private static final int METHODID_VIEW_BY_ID = 34;
+  private static final int METHODID_VIEW_BY_UUID = 35;
+  private static final int METHODID_VIEW_BY_REFERENCE_ID = 36;
+  private static final int METHODID_VIEW_ESSENTIAL_BY_ID = 37;
+  private static final int METHODID_VIEW_ESSENTIAL_BY_UUID = 38;
+  private static final int METHODID_VIEW_FROM_IDS = 39;
+  private static final int METHODID_VIEW_ANCILLARY_PARAMETERS_BY_UUID = 40;
+  private static final int METHODID_VIEW_ALL = 41;
+  private static final int METHODID_VIEW_ALL_FOR_ENTITY_UUID = 42;
+  private static final int METHODID_VIEW_WITH_PAGINATION = 43;
+  private static final int METHODID_VIEW_PROSPECTIVE_FAMILIES = 44;
+  private static final int METHODID_FILTER_PROSPECTIVE_FAMILIES = 45;
+  private static final int METHODID_VIEW_PROSPECTIVE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM = 46;
+  private static final int METHODID_IS_DOWNLOADABLE = 47;
+  private static final int METHODID_DOWNLOAD_BY_UUID = 48;
+  private static final int METHODID_DOWNLOAD_LABEL_BY_UUID = 49;
+  private static final int METHODID_VIEW_ADDED_FAMILY_QUANTITY_FOR_SOURCE = 50;
+  private static final int METHODID_SEARCH_ALL = 51;
+  private static final int METHODID_FILTER = 52;
+  private static final int METHODID_COUNT_IN_STATUS = 53;
+  private static final int METHODID_COUNT = 54;
+  private static final int METHODID_DOWNLOAD_AS_CSV = 55;
+
+  private static final class MethodHandlers<Req, Resp> implements
+      io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
+      io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
+      io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
+      io.grpc.stub.ServerCalls.BidiStreamingMethod<Req, Resp> {
+    private final AsyncService serviceImpl;
+    private final int methodId;
+
+    MethodHandlers(AsyncService serviceImpl, int methodId) {
+      this.serviceImpl = serviceImpl;
+      this.methodId = methodId;
+    }
+
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
+    public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
+      switch (methodId) {
+        case METHODID_CREATE:
+          serviceImpl.create((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_DRAFT:
+          serviceImpl.draft((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_DRAFT_UPDATE:
+          serviceImpl.draftUpdate((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_SEND_FOR_VERIFICATION:
+          serviceImpl.sendForVerification((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_VERIFY:
+          serviceImpl.verify((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_APPROVE:
+          serviceImpl.approve((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_SEND_FOR_REVISION:
+          serviceImpl.sendForRevision((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_REVISION_UPDATE:
+          serviceImpl.revisionUpdate((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_HALT:
+          serviceImpl.halt((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_DISCARD:
+          serviceImpl.discard((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_RESTORE:
+          serviceImpl.restore((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_COMPLETE:
+          serviceImpl.complete((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_REPEAT:
+          serviceImpl.repeat((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_REOPEN:
+          serviceImpl.reopen((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_COMMENT_ADD:
+          serviceImpl.commentAdd((com.scailo.sdk.IdentifierUUIDWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_SEND_EMAIL:
+          serviceImpl.sendEmail((com.scailo.sdk.IdentifierWithEmailAttributes) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_CREATE_MAGIC_LINK:
+          serviceImpl.createMagicLink((com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.MagicLink>) responseObserver);
+          break;
+        case METHODID_AUTOFILL:
+          serviceImpl.autofill((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_IS_COMPLETABLE:
+          serviceImpl.isCompletable((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.BooleanResponse>) responseObserver);
+          break;
+        case METHODID_ADD_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM:
+          serviceImpl.addOutwardJobFreeIssueMaterialItem((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_MODIFY_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM:
+          serviceImpl.modifyOutwardJobFreeIssueMaterialItem((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_APPROVE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM:
+          serviceImpl.approveOutwardJobFreeIssueMaterialItem((com.scailo.sdk.IdentifierWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_DELETE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM:
+          serviceImpl.deleteOutwardJobFreeIssueMaterialItem((com.scailo.sdk.IdentifierWithUserComment) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_REORDER_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS:
+          serviceImpl.reorderOutwardJobFreeIssueMaterialItems((com.scailo.sdk.ReorderItemsRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.IdentifierResponse>) responseObserver);
+          break;
+        case METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_BY_ID:
+          serviceImpl.viewOutwardJobFreeIssueMaterialItemByID((com.scailo.sdk.Identifier) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialItem>) responseObserver);
+          break;
+        case METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_BY_INVENTORY_HASH:
+          serviceImpl.viewOutwardJobFreeIssueMaterialItemByInventoryHash((com.scailo.sdk.SimpleSearchReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialItem>) responseObserver);
+          break;
+        case METHODID_VIEW_APPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS:
+          serviceImpl.viewApprovedOutwardJobFreeIssueMaterialItems((com.scailo.sdk.IdentifierWithSearchKey) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>) responseObserver);
+          break;
+        case METHODID_VIEW_UNAPPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS:
+          serviceImpl.viewUnapprovedOutwardJobFreeIssueMaterialItems((com.scailo.sdk.IdentifierWithSearchKey) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>) responseObserver);
+          break;
+        case METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_HISTORY:
+          serviceImpl.viewOutwardJobFreeIssueMaterialItemHistory((com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>) responseObserver);
+          break;
+        case METHODID_VIEW_PAGINATED_APPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS:
+          serviceImpl.viewPaginatedApprovedOutwardJobFreeIssueMaterialItems((com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>) responseObserver);
+          break;
+        case METHODID_VIEW_PAGINATED_UNAPPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS:
+          serviceImpl.viewPaginatedUnapprovedOutwardJobFreeIssueMaterialItems((com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>) responseObserver);
+          break;
+        case METHODID_SEARCH_ITEMS_WITH_PAGINATION:
+          serviceImpl.searchItemsWithPagination((com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>) responseObserver);
+          break;
+        case METHODID_DOWNLOAD_ITEMS_AS_CSV:
+          serviceImpl.downloadItemsAsCSV((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile>) responseObserver);
+          break;
+        case METHODID_DOWNLOAD_ITEMS_TEMPLATE_AS_CSV:
+          serviceImpl.downloadItemsTemplateAsCSV((com.scailo.sdk.Empty) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile>) responseObserver);
+          break;
+        case METHODID_VIEW_BY_ID:
+          serviceImpl.viewByID((com.scailo.sdk.Identifier) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial>) responseObserver);
+          break;
+        case METHODID_VIEW_BY_UUID:
+          serviceImpl.viewByUUID((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial>) responseObserver);
+          break;
+        case METHODID_VIEW_BY_REFERENCE_ID:
+          serviceImpl.viewByReferenceID((com.scailo.sdk.SimpleSearchReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial>) responseObserver);
+          break;
+        case METHODID_VIEW_ESSENTIAL_BY_ID:
+          serviceImpl.viewEssentialByID((com.scailo.sdk.Identifier) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial>) responseObserver);
+          break;
+        case METHODID_VIEW_ESSENTIAL_BY_UUID:
+          serviceImpl.viewEssentialByUUID((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterial>) responseObserver);
+          break;
+        case METHODID_VIEW_FROM_IDS:
+          serviceImpl.viewFromIDs((com.scailo.sdk.IdentifiersList) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>) responseObserver);
+          break;
+        case METHODID_VIEW_ANCILLARY_PARAMETERS_BY_UUID:
+          serviceImpl.viewAncillaryParametersByUUID((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters>) responseObserver);
+          break;
+        case METHODID_VIEW_ALL:
+          serviceImpl.viewAll((com.scailo.sdk.ActiveStatus) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>) responseObserver);
+          break;
+        case METHODID_VIEW_ALL_FOR_ENTITY_UUID:
+          serviceImpl.viewAllForEntityUUID((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>) responseObserver);
+          break;
+        case METHODID_VIEW_WITH_PAGINATION:
+          serviceImpl.viewWithPagination((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse>) responseObserver);
+          break;
+        case METHODID_VIEW_PROSPECTIVE_FAMILIES:
+          serviceImpl.viewProspectiveFamilies((com.scailo.sdk.IdentifierWithSearchKey) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.FamiliesList>) responseObserver);
+          break;
+        case METHODID_FILTER_PROSPECTIVE_FAMILIES:
+          serviceImpl.filterProspectiveFamilies((com.scailo.sdk.FilterFamiliesReqForIdentifier) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.FamiliesList>) responseObserver);
+          break;
+        case METHODID_VIEW_PROSPECTIVE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM:
+          serviceImpl.viewProspectiveOutwardJobFreeIssueMaterialItem((com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest>) responseObserver);
+          break;
+        case METHODID_IS_DOWNLOADABLE:
+          serviceImpl.isDownloadable((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.BooleanResponse>) responseObserver);
+          break;
+        case METHODID_DOWNLOAD_BY_UUID:
+          serviceImpl.downloadByUUID((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile>) responseObserver);
+          break;
+        case METHODID_DOWNLOAD_LABEL_BY_UUID:
+          serviceImpl.downloadLabelByUUID((com.scailo.sdk.IdentifierUUID) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile>) responseObserver);
+          break;
+        case METHODID_VIEW_ADDED_FAMILY_QUANTITY_FOR_SOURCE:
+          serviceImpl.viewAddedFamilyQuantityForSource((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.DualQuantitiesResponse>) responseObserver);
+          break;
+        case METHODID_SEARCH_ALL:
+          serviceImpl.searchAll((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>) responseObserver);
+          break;
+        case METHODID_FILTER:
+          serviceImpl.filter((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>) responseObserver);
+          break;
+        case METHODID_COUNT_IN_STATUS:
+          serviceImpl.countInStatus((com.scailo.sdk.CountInSLCStatusRequest) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.CountResponse>) responseObserver);
+          break;
+        case METHODID_COUNT:
+          serviceImpl.count((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.CountResponse>) responseObserver);
+          break;
+        case METHODID_DOWNLOAD_AS_CSV:
+          serviceImpl.downloadAsCSV((com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq) request,
+              (io.grpc.stub.StreamObserver<com.scailo.sdk.StandardFile>) responseObserver);
+          break;
+        default:
+          throw new AssertionError();
+      }
+    }
+
+    @java.lang.Override
+    @java.lang.SuppressWarnings("unchecked")
+    public io.grpc.stub.StreamObserver<Req> invoke(
+        io.grpc.stub.StreamObserver<Resp> responseObserver) {
+      switch (methodId) {
+        default:
+          throw new AssertionError();
+      }
+    }
+  }
+
+  public static final io.grpc.ServerServiceDefinition bindService(AsyncService service) {
+    return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
+        .addMethod(
+          getCreateMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_CREATE)))
+        .addMethod(
+          getDraftMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCreateRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_DRAFT)))
+        .addMethod(
+          getDraftUpdateMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_DRAFT_UPDATE)))
+        .addMethod(
+          getSendForVerificationMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_SEND_FOR_VERIFICATION)))
+        .addMethod(
+          getVerifyMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_VERIFY)))
+        .addMethod(
+          getApproveMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_APPROVE)))
+        .addMethod(
+          getSendForRevisionMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_SEND_FOR_REVISION)))
+        .addMethod(
+          getRevisionUpdateMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceUpdateRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_REVISION_UPDATE)))
+        .addMethod(
+          getHaltMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_HALT)))
+        .addMethod(
+          getDiscardMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_DISCARD)))
+        .addMethod(
+          getRestoreMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_RESTORE)))
+        .addMethod(
+          getCompleteMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_COMPLETE)))
+        .addMethod(
+          getRepeatMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_REPEAT)))
+        .addMethod(
+          getReopenMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_REOPEN)))
+        .addMethod(
+          getCommentAddMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUIDWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_COMMENT_ADD)))
+        .addMethod(
+          getSendEmailMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierWithEmailAttributes,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_SEND_EMAIL)))
+        .addMethod(
+          getCreateMagicLinkMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.MagicLinksServiceCreateRequestForSpecificResource,
+              com.scailo.sdk.MagicLink>(
+                service, METHODID_CREATE_MAGIC_LINK)))
+        .addMethod(
+          getAutofillMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAutofillRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_AUTOFILL)))
+        .addMethod(
+          getIsCompletableMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.BooleanResponse>(
+                service, METHODID_IS_COMPLETABLE)))
+        .addMethod(
+          getAddOutwardJobFreeIssueMaterialItemMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_ADD_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM)))
+        .addMethod(
+          getModifyOutwardJobFreeIssueMaterialItemMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemUpdateRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_MODIFY_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM)))
+        .addMethod(
+          getApproveOutwardJobFreeIssueMaterialItemMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_APPROVE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM)))
+        .addMethod(
+          getDeleteOutwardJobFreeIssueMaterialItemMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierWithUserComment,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_DELETE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM)))
+        .addMethod(
+          getReorderOutwardJobFreeIssueMaterialItemsMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.ReorderItemsRequest,
+              com.scailo.sdk.IdentifierResponse>(
+                service, METHODID_REORDER_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS)))
+        .addMethod(
+          getViewOutwardJobFreeIssueMaterialItemByIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.Identifier,
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItem>(
+                service, METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_BY_ID)))
+        .addMethod(
+          getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.SimpleSearchReq,
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItem>(
+                service, METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_BY_INVENTORY_HASH)))
+        .addMethod(
+          getViewApprovedOutwardJobFreeIssueMaterialItemsMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierWithSearchKey,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>(
+                service, METHODID_VIEW_APPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS)))
+        .addMethod(
+          getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierWithSearchKey,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>(
+                service, METHODID_VIEW_UNAPPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS)))
+        .addMethod(
+          getViewOutwardJobFreeIssueMaterialItemHistoryMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItemHistoryRequest,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsItemsList>(
+                service, METHODID_VIEW_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM_HISTORY)))
+        .addMethod(
+          getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>(
+                service, METHODID_VIEW_PAGINATED_APPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS)))
+        .addMethod(
+          getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>(
+                service, METHODID_VIEW_PAGINATED_UNAPPROVED_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEMS)))
+        .addMethod(
+          getSearchItemsWithPaginationMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItemsSearchRequest,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginatedItemsResponse>(
+                service, METHODID_SEARCH_ITEMS_WITH_PAGINATION)))
+        .addMethod(
+          getDownloadItemsAsCSVMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.StandardFile>(
+                service, METHODID_DOWNLOAD_ITEMS_AS_CSV)))
+        .addMethod(
+          getDownloadItemsTemplateAsCSVMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.Empty,
+              com.scailo.sdk.StandardFile>(
+                service, METHODID_DOWNLOAD_ITEMS_TEMPLATE_AS_CSV)))
+        .addMethod(
+          getViewByIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.Identifier,
+              com.scailo.sdk.OutwardJobFreeIssueMaterial>(
+                service, METHODID_VIEW_BY_ID)))
+        .addMethod(
+          getViewByUUIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.OutwardJobFreeIssueMaterial>(
+                service, METHODID_VIEW_BY_UUID)))
+        .addMethod(
+          getViewByReferenceIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.SimpleSearchReq,
+              com.scailo.sdk.OutwardJobFreeIssueMaterial>(
+                service, METHODID_VIEW_BY_REFERENCE_ID)))
+        .addMethod(
+          getViewEssentialByIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.Identifier,
+              com.scailo.sdk.OutwardJobFreeIssueMaterial>(
+                service, METHODID_VIEW_ESSENTIAL_BY_ID)))
+        .addMethod(
+          getViewEssentialByUUIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.OutwardJobFreeIssueMaterial>(
+                service, METHODID_VIEW_ESSENTIAL_BY_UUID)))
+        .addMethod(
+          getViewFromIDsMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifiersList,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>(
+                service, METHODID_VIEW_FROM_IDS)))
+        .addMethod(
+          getViewAncillaryParametersByUUIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.OutwardJobFreeIssueMaterialAncillaryParameters>(
+                service, METHODID_VIEW_ANCILLARY_PARAMETERS_BY_UUID)))
+        .addMethod(
+          getViewAllMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.ActiveStatus,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>(
+                service, METHODID_VIEW_ALL)))
+        .addMethod(
+          getViewAllForEntityUUIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>(
+                service, METHODID_VIEW_ALL_FOR_ENTITY_UUID)))
+        .addMethod(
+          getViewWithPaginationMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationReq,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServicePaginationResponse>(
+                service, METHODID_VIEW_WITH_PAGINATION)))
+        .addMethod(
+          getViewProspectiveFamiliesMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierWithSearchKey,
+              com.scailo.sdk.FamiliesList>(
+                service, METHODID_VIEW_PROSPECTIVE_FAMILIES)))
+        .addMethod(
+          getFilterProspectiveFamiliesMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.FilterFamiliesReqForIdentifier,
+              com.scailo.sdk.FamiliesList>(
+                service, METHODID_FILTER_PROSPECTIVE_FAMILIES)))
+        .addMethod(
+          getViewProspectiveOutwardJobFreeIssueMaterialItemMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobFreeIssueMaterialItemProspectiveInfoRequest,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceItemCreateRequest>(
+                service, METHODID_VIEW_PROSPECTIVE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_ITEM)))
+        .addMethod(
+          getIsDownloadableMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.BooleanResponse>(
+                service, METHODID_IS_DOWNLOADABLE)))
+        .addMethod(
+          getDownloadByUUIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.StandardFile>(
+                service, METHODID_DOWNLOAD_BY_UUID)))
+        .addMethod(
+          getDownloadLabelByUUIDMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.IdentifierUUID,
+              com.scailo.sdk.StandardFile>(
+                service, METHODID_DOWNLOAD_LABEL_BY_UUID)))
+        .addMethod(
+          getViewAddedFamilyQuantityForSourceMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceAlreadyAddedQuantityForSourceRequest,
+              com.scailo.sdk.DualQuantitiesResponse>(
+                service, METHODID_VIEW_ADDED_FAMILY_QUANTITY_FOR_SOURCE)))
+        .addMethod(
+          getSearchAllMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceSearchAllReq,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>(
+                service, METHODID_SEARCH_ALL)))
+        .addMethod(
+          getFilterMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq,
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsList>(
+                service, METHODID_FILTER)))
+        .addMethod(
+          getCountInStatusMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.CountInSLCStatusRequest,
+              com.scailo.sdk.CountResponse>(
+                service, METHODID_COUNT_IN_STATUS)))
+        .addMethod(
+          getCountMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceCountReq,
+              com.scailo.sdk.CountResponse>(
+                service, METHODID_COUNT)))
+        .addMethod(
+          getDownloadAsCSVMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              com.scailo.sdk.OutwardJobsFreeIssueMaterialsServiceFilterReq,
+              com.scailo.sdk.StandardFile>(
+                service, METHODID_DOWNLOAD_AS_CSV)))
+        .build();
+  }
+
+  private static abstract class OutwardJobsFreeIssueMaterialsServiceBaseDescriptorSupplier
+      implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
+    OutwardJobsFreeIssueMaterialsServiceBaseDescriptorSupplier() {}
+
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.scailo.sdk.OutwardJobsFreeIssueMaterialsScailoProto.getDescriptor();
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
+      return getFileDescriptor().findServiceByName("OutwardJobsFreeIssueMaterialsService");
+    }
+  }
+
+  private static final class OutwardJobsFreeIssueMaterialsServiceFileDescriptorSupplier
+      extends OutwardJobsFreeIssueMaterialsServiceBaseDescriptorSupplier {
+    OutwardJobsFreeIssueMaterialsServiceFileDescriptorSupplier() {}
+  }
+
+  private static final class OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier
+      extends OutwardJobsFreeIssueMaterialsServiceBaseDescriptorSupplier
+      implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
+    private final java.lang.String methodName;
+
+    OutwardJobsFreeIssueMaterialsServiceMethodDescriptorSupplier(java.lang.String methodName) {
+      this.methodName = methodName;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
+      return getServiceDescriptor().findMethodByName(methodName);
+    }
+  }
+
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (OutwardJobsFreeIssueMaterialsServiceGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new OutwardJobsFreeIssueMaterialsServiceFileDescriptorSupplier())
+              .addMethod(getCreateMethod())
+              .addMethod(getDraftMethod())
+              .addMethod(getDraftUpdateMethod())
+              .addMethod(getSendForVerificationMethod())
+              .addMethod(getVerifyMethod())
+              .addMethod(getApproveMethod())
+              .addMethod(getSendForRevisionMethod())
+              .addMethod(getRevisionUpdateMethod())
+              .addMethod(getHaltMethod())
+              .addMethod(getDiscardMethod())
+              .addMethod(getRestoreMethod())
+              .addMethod(getCompleteMethod())
+              .addMethod(getRepeatMethod())
+              .addMethod(getReopenMethod())
+              .addMethod(getCommentAddMethod())
+              .addMethod(getSendEmailMethod())
+              .addMethod(getCreateMagicLinkMethod())
+              .addMethod(getAutofillMethod())
+              .addMethod(getIsCompletableMethod())
+              .addMethod(getAddOutwardJobFreeIssueMaterialItemMethod())
+              .addMethod(getModifyOutwardJobFreeIssueMaterialItemMethod())
+              .addMethod(getApproveOutwardJobFreeIssueMaterialItemMethod())
+              .addMethod(getDeleteOutwardJobFreeIssueMaterialItemMethod())
+              .addMethod(getReorderOutwardJobFreeIssueMaterialItemsMethod())
+              .addMethod(getViewOutwardJobFreeIssueMaterialItemByIDMethod())
+              .addMethod(getViewOutwardJobFreeIssueMaterialItemByInventoryHashMethod())
+              .addMethod(getViewApprovedOutwardJobFreeIssueMaterialItemsMethod())
+              .addMethod(getViewUnapprovedOutwardJobFreeIssueMaterialItemsMethod())
+              .addMethod(getViewOutwardJobFreeIssueMaterialItemHistoryMethod())
+              .addMethod(getViewPaginatedApprovedOutwardJobFreeIssueMaterialItemsMethod())
+              .addMethod(getViewPaginatedUnapprovedOutwardJobFreeIssueMaterialItemsMethod())
+              .addMethod(getSearchItemsWithPaginationMethod())
+              .addMethod(getDownloadItemsAsCSVMethod())
+              .addMethod(getDownloadItemsTemplateAsCSVMethod())
+              .addMethod(getViewByIDMethod())
+              .addMethod(getViewByUUIDMethod())
+              .addMethod(getViewByReferenceIDMethod())
+              .addMethod(getViewEssentialByIDMethod())
+              .addMethod(getViewEssentialByUUIDMethod())
+              .addMethod(getViewFromIDsMethod())
+              .addMethod(getViewAncillaryParametersByUUIDMethod())
+              .addMethod(getViewAllMethod())
+              .addMethod(getViewAllForEntityUUIDMethod())
+              .addMethod(getViewWithPaginationMethod())
+              .addMethod(getViewProspectiveFamiliesMethod())
+              .addMethod(getFilterProspectiveFamiliesMethod())
+              .addMethod(getViewProspectiveOutwardJobFreeIssueMaterialItemMethod())
+              .addMethod(getIsDownloadableMethod())
+              .addMethod(getDownloadByUUIDMethod())
+              .addMethod(getDownloadLabelByUUIDMethod())
+              .addMethod(getViewAddedFamilyQuantityForSourceMethod())
+              .addMethod(getSearchAllMethod())
+              .addMethod(getFilterMethod())
+              .addMethod(getCountInStatusMethod())
+              .addMethod(getCountMethod())
+              .addMethod(getDownloadAsCSVMethod())
+              .build();
+        }
+      }
+    }
+    return result;
+  }
+}
