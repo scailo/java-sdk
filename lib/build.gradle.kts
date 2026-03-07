@@ -41,13 +41,6 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api:1.3.2")
 }
 
-sourceSets {
-    main {
-        kotlin { srcDirs("src/main/java") }
-        java { srcDirs("src/main/java") }
-    }
-}
-
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
@@ -59,7 +52,7 @@ publishing {
                 name.set("Scailo Java SDK")
                 description.set("Official Java SDK for the Scailo Platform.")
                 url.set("https://scailo.com")
-                
+
                 licenses {
                     license {
                         name.set("The Apache License, Version 2.0")
