@@ -1,8 +1,8 @@
 plugins {
     kotlin("jvm")
     `java-library`
-    `maven-publish`
-    signing // Required for Maven Central
+    // The "Vanniktech" plugin handles the Central Portal ZIP bundling automatically
+    id("com.vanniktech.maven.publish") version "0.28.0" 
 }
 
 group = "com.scailo"
@@ -14,12 +14,6 @@ group = "com.scailo"
 version = System.getenv("GITHUB_REF_NAME")?.removePrefix("v") 
           ?: project.findProperty("version")?.toString() 
           ?: "0.0.1-SNAPSHOT"
-
-java {
-    // 2. Maven Central requires these two extra JARs
-    withSourcesJar()
-    withJavadocJar()
-}
 
 repositories {
     mavenCentral()
@@ -41,59 +35,43 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api:1.3.2")
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-            artifactId = "scailo-sdk"
-
-            // 3. Mandatory POM Metadata
-            pom {
-                name.set("Scailo Java SDK")
-                description.set("Official Java SDK for the Scailo Platform.")
-                url.set("https://scailo.com")
-
-                licenses {
-                    license {
-                        name.set("The Apache License, Version 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                    }
-                }
-                developers {
-                    developer {
-                        id.set("scailo")
-                        name.set("Scailo Engineering")
-                        email.set("engineering@scailo.com")
-                    }
-                }
-                scm {
-                    connection.set("scm:git:git://github.com/scailo/java-sdk.git")
-                    developerConnection.set("scm:git:ssh://github.com:scailo/java-sdk.git")
-                    url.set("https://github.com/scailo/java-sdk")
-                }
-            }
-        }
-    }
-
-    // 4. Point to the modern Central Portal
-    repositories {
-        maven {
-            name = "CentralPortal"
-            url = uri("https://central.sonatype.com/api/v1/publisher/deployments/maven")
-            credentials {
-                username = System.getenv("CENTRAL_USERNAME")
-                password = System.getenv("CENTRAL_PASSWORD")
-            }
-        }
-    }
+// Safety guard: Handles the duplicate entry error you saw earlier
+tasks.withType<Jar>().configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
-// 5. Signing configuration for automation
-signing {
-    val signingKey = System.getenv("GPG_PRIVATE_KEY")
-    val signingPassword = System.getenv("GPG_PASSPHRASE")
-    if (!signingKey.isNullOrBlank()) {
-        useInMemoryPgpKeys(signingKey, signingPassword)
-        sign(publishing.publications["mavenJava"])
+// Modern Central Portal Publishing Configuration
+mavenPublishing {
+    // Defines the host as the new Central Portal
+    publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.CENTRAL_PORTAL)
+    
+    // Automatically signs all artifacts (Sources, Javadoc, and JAR)
+    signAllPublications()
+
+    coordinates(group.toString(), "scailo-sdk", version.toString())
+
+    pom {
+        name.set("Scailo Java SDK")
+        description.set("Official Java SDK for the Scailo Platform.")
+        url.set("https://scailo.com")
+
+        licenses {
+            license {
+                name.set("The Apache License, Version 2.0")
+                url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+            }
+        }
+        developers {
+            developer {
+                id.set("scailo")
+                name.set("Scailo Engineering")
+                email.set("engineering@scailo.com")
+            }
+        }
+        scm {
+            connection.set("scm:git:git://github.com/scailo/java-sdk.git")
+            developerConnection.set("scm:git:ssh://github.com:scailo/java-sdk.git")
+            url.set("https://github.com/scailo/java-sdk")
+        }
     }
 }
