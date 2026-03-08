@@ -20,13 +20,9 @@ jobs:
 
       - name: Publish to Maven Central
         run: |
-          # Decode the secret back into a temporary file
           echo "${{ secrets.GPG_PRIVATE_KEY }}" | base64 -d > gpg_key.asc
-          
           ./gradlew :lib:publishAllPublicationsToMavenCentralRepository \
             -PsigningInMemoryKey="$(cat gpg_key.asc)" \
             -PsigningPassword="${{ secrets.GPG_PASSPHRASE }}" \
             -PmavenCentralUsername="${{ secrets.CENTRAL_USERNAME }}" \
             -PmavenCentralPassword="${{ secrets.CENTRAL_PASSWORD }}"
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
