@@ -28,18 +28,33 @@ jobs:
 
       - name: Create Bundle ZIP
         run: |
-          # Extract version from tag (v0.1.5 -> 0.1.5)
+          # 1. Get version (v0.1.5 -> 0.1.5)
           VERSION=$(echo "${{ github.ref_name }}" | sed 's/^v//')
-          cd ~/.m2/repository/com/scailo/scailo-sdk/$VERSION
-          zip -r ../../../../bundle.zip .
+          
+          # 2. Define the path where Gradle put the files
+          ARTIFACT_PATH="$HOME/.m2/repository/com/scailo/scailo-sdk/$VERSION"
+          
+          # 3. Verify the directory exists (helpful for debugging)
+          if [ ! -d "$ARTIFACT_PATH" ]; then
+            echo "Error: Directory $ARTIFACT_PATH does not exist!"
+            ls -R $HOME/.m2/repository/com/scailo/
+            exit 1
+          fi
+          
+          # 4. Create the ZIP from within that directory
+          # Using -j (junk paths) or cd-ing properly ensures the ZIP structure is flat
+          (cd "$ARTIFACT_PATH" && zip -r "$GITHUB_WORKSPACE/bundle.zip" .)
+          
+          echo "Bundle created at $GITHUB_WORKSPACE/bundle.zip"
 
       - name: Upload to Central Portal
         run: |
-          # Use the Token-based Auth (Username:Password Base64)
-          # Ensure CENTRAL_USERNAME is your Token ID and CENTRAL_PASSWORD is your Token Secret
+          # Use the Token-based Auth
           AUTH=$(echo -n "${{ secrets.CENTRAL_USERNAME }}:${{ secrets.CENTRAL_PASSWORD }}" | base64)
           
+          # Point curl explicitly to the workspace file
           curl --request POST \
+            --verbose \
             --header "Authorization: Bearer $AUTH" \
-            --form "bundle=@bundle.zip" \
+            --form "bundle=@$GITHUB_WORKSPACE/bundle.zip" \
             "https://central.sonatype.com/api/v1/publisher/upload?publishingType=AUTOMATIC"
