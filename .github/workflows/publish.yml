@@ -28,31 +28,31 @@ jobs:
 
       - name: Create Bundle ZIP
         run: |
-          # 1. Get version (v0.1.5 -> 0.1.5)
           VERSION=$(echo "${{ github.ref_name }}" | sed 's/^v//')
           
-          # 2. Define the path where Gradle put the files
-          ARTIFACT_PATH="$HOME/.m2/repository/com/scailo/scailo-sdk/$VERSION"
+          # 1. Navigate to the ROOT of the local maven repository
+          cd $HOME/.m2/repository
           
-          # 3. Verify the directory exists (helpful for debugging)
-          if [ ! -d "$ARTIFACT_PATH" ]; then
-            echo "Error: Directory $ARTIFACT_PATH does not exist!"
-            ls -R $HOME/.m2/repository/com/scailo/
-            exit 1
-          fi
+          # 2. Target the specific version folder
+          TARGET_DIR="com/scailo/scailo-sdk/$VERSION"
           
-          # 4. Create the ZIP from within that directory
-          # Using -j (junk paths) or cd-ing properly ensures the ZIP structure is flat
-          (cd "$ARTIFACT_PATH" && zip -r "$GITHUB_WORKSPACE/bundle.zip" .)
+          # 3. Generate missing MD5 and SHA1 checksums
+          # This loops through every file in the version folder and creates the .md5 and .sha1
+          find "$TARGET_DIR" -type f -not -name "*.md5" -not -name "*.sha1" | while read -r file; do
+            md5sum "$file" | cut -d ' ' -f 1 > "${file}.md5"
+            sha1sum "$file" | cut -d ' ' -f 1 > "${file}.sha1"
+          done
           
-          echo "Bundle created at $GITHUB_WORKSPACE/bundle.zip"
+          # 4. Create the ZIP including the directory structure
+          # It is CRITICAL to zip 'com/...' and not just the files inside.
+          zip -r "$GITHUB_WORKSPACE/bundle.zip" com/scailo/scailo-sdk/$VERSION
+          
+          echo "Bundle created with checksums and correct path structure."
 
       - name: Upload to Central Portal
         run: |
-          # Use the Token-based Auth
           AUTH=$(echo -n "${{ secrets.CENTRAL_USERNAME }}:${{ secrets.CENTRAL_PASSWORD }}" | base64)
           
-          # Point curl explicitly to the workspace file
           curl --request POST \
             --verbose \
             --header "Authorization: Bearer $AUTH" \
