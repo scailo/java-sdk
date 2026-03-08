@@ -3,25 +3,36 @@ name: Publish to Maven Central
 on:
   push:
     tags:
-      - 'v*' # Triggers on v1.0, v2.1.0, etc.
+      - 'v*'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'gradle'
 
-      - name: Publish to Maven Central
-        run: ./gradlew :lib:publishAllPublicationsToMavenCentralRepository
+      - name: Build and Sign Artifacts
+        run: ./gradlew :lib:publishMavenJavaPublicationToMavenLocal
         env:
-          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.CENTRAL_USERNAME }}
-          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.CENTRAL_PASSWORD }}
-          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.GPG_PRIVATE_KEY }}
-          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_PASSPHRASE }}
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Create Bundle ZIP
+        run: |
+          cd ~/.m2/repository/com/scailo/scailo-sdk/${{ github.ref_name }}
+          # Remove 'v' from tag name for the path if your versioning logic does so
+          VERSION=$(echo "${{ github.ref_name }}" | sed 's/^v//')
+          cd ~/.m2/repository/com/scailo/scailo-sdk/$VERSION
+          zip -r ../../../../bundle.zip .
+
+      - name: Upload to Central Portal
+        run: |
+          curl --request POST \
+            --header "Authorization: Bearer ${{ secrets.CENTRAL_TOKEN }}" \
+            --form "bundle=@bundle.zip" \
+            "https://central.sonatype.com/api/v1/publisher/deployments"
