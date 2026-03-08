@@ -79,5 +79,18 @@ publishing {
 // Standard signing block - Gradle will look for 
 // 'signing.keyId', 'signing.password', and 'signing.secretKeyRingFile'
 signing {
-    sign(publishing.publications["mavenJava"])
+    // Only require signing if we are publishing to a repository
+    val isPublishTask = gradle.startParameter.taskNames.any { it.contains("publish", ignoreCase = true) }
+    
+    if (isPublishTask) {
+        val signingKey = project.findProperty("signing.signingKey") as String?
+        val signingPassword = project.findProperty("signing.password") as String?
+        
+        if (!signingKey.isNullOrBlank()) {
+            // This is the modern 'In-Memory' method that works best with GitHub Secrets
+            useInMemoryPgpKeys(signingKey, signingPassword)
+        }
+        
+        sign(publishing.publications["mavenJava"])
+    }
 }

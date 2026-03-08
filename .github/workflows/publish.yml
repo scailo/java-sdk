@@ -10,29 +10,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and Sign Artifacts
-        run: ./gradlew :lib:publishMavenJavaPublicationToMavenLocal
+      - name: Build and Sign
+        run: |
+          ./gradlew publishMavenJavaPublicationToMavenLocal \
+            -Psigning.signingKey="${{ secrets.GPG_PRIVATE_KEY }}" \
+            -Psigning.password="${{ secrets.GPG_PASSPHRASE }}"
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: Create Bundle ZIP
         run: |
-          cd ~/.m2/repository/com/scailo/scailo-sdk/${{ github.ref_name }}
-          # Remove 'v' from tag name for the path if your versioning logic does so
+          # Extract version from tag (v0.1.5 -> 0.1.5)
           VERSION=$(echo "${{ github.ref_name }}" | sed 's/^v//')
           cd ~/.m2/repository/com/scailo/scailo-sdk/$VERSION
           zip -r ../../../../bundle.zip .
 
       - name: Upload to Central Portal
         run: |
+          # Use the Token-based Auth (Username:Password Base64)
+          # Ensure CENTRAL_USERNAME is your Token ID and CENTRAL_PASSWORD is your Token Secret
+          AUTH=$(echo -n "${{ secrets.CENTRAL_USERNAME }}:${{ secrets.CENTRAL_PASSWORD }}" | base64)
+          
           curl --request POST \
-            --header "Authorization: Bearer ${{ secrets.CENTRAL_TOKEN }}" \
+            --header "Authorization: Bearer $AUTH" \
             --form "bundle=@bundle.zip" \
-            "https://central.sonatype.com/api/v1/publisher/deployments"
+            "https://central.sonatype.com/api/v1/publisher/upload?publishingType=AUTOMATIC"
