@@ -19,10 +19,9 @@ jobs:
           cache: 'gradle'
 
       - name: Publish to Maven Central
-        run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | base64 -d > gpg_key.asc
-          ./gradlew :lib:publishAllPublicationsToMavenCentralRepository \
-            -PsigningInMemoryKey="$(cat gpg_key.asc)" \
-            -PsigningPassword="${{ secrets.GPG_PASSPHRASE }}" \
-            -PmavenCentralUsername="${{ secrets.CENTRAL_USERNAME }}" \
-            -PmavenCentralPassword="${{ secrets.CENTRAL_PASSWORD }}"
+        run: ./gradlew :lib:publishAllPublicationsToMavenCentralRepository
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.CENTRAL_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.CENTRAL_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.GPG_PRIVATE_KEY }}
+          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_PASSPHRASE }}
